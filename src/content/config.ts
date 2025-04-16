@@ -62,18 +62,18 @@ const blog = defineCollection({
     }),
 });
 
-const docs = defineCollection({
-  loader: glob({ pattern: "**\/[^_]*.{md,mdx}", base: "./src/content/docs" }),
-  schema: ({ image }) =>
-    searchable.extend({
-      pubDate: z.date().optional(),
-      modDate: z.date().optional(),
-      image: image().optional(),
-      imageAlt: z.string().default("image"),
-      hideToc: z.boolean().default(false),
-      hideNav: z.boolean().default(false),
-    }),
-});
+// const docs = defineCollection({
+//   loader: glob({ pattern: "**\/[^_]*.{md,mdx}", base: "./src/content/docs" }),
+//   schema: ({ image }) =>
+//     searchable.extend({
+//       pubDate: z.date().optional(),
+//       modDate: z.date().optional(),
+//       image: image().optional(),
+//       imageAlt: z.string().default("image"),
+//       hideToc: z.boolean().default(false),
+//       hideNav: z.boolean().default(false),
+//     }),
+// });
 
 const home = defineCollection({
   loader: glob({ pattern: "-index.{md,mdx}", base: "./src/content/home" }),
@@ -167,7 +167,7 @@ export const collections = {
   about,
   authors,
   blog,
-  docs,
+ //docs,
   home,
   indexCards,
   poetry,

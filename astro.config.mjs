@@ -11,11 +11,15 @@ import remarkMath from "remark-math";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://janedoe.com",
+  site: "https://dev.undefined.dev",
   base: "/",
   trailingSlash: "ignore",
   prefetch: {
     prefetchAll: true
+  },
+  server: {
+    host: '0.0.0.0',
+    port: 4321
   },
   integrations: [react(), sitemap(), tailwind({
     config: {
