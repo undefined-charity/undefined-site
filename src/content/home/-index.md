@@ -1,5 +1,5 @@
 ---
-image: "@assets/astrogon-star.svg"
+image: "@assets/logo.png"
 imageAlt: Undefined charity logo
 title: Creating Safe Spaces for LGBTQIA+ Community
 content: >

@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="src/assets/astrogon-logo.svg" style="width:80%;" alt="Undefined Logo" align="center" />
+  <img src="src/assets/logo.png" style="width:80%;" alt="Undefined Logo" align="center" />
 </div>
 
 ---
 
-[![Website](https://img.shields.io/website?up_message=online&up_color=limegreen&down_message=offline&down_color=yellow&url=https%3A%2F%2Fundefined.charity%2F)](https://undefined.charity/)
+[![Website](https://img.shields.io/website?up_message=online&up_color=limegreen&down_message=offline&down_color=yellow&url=https%3A%2F%2Fdev.undefined.charity%2F)](https://dev.undefined.charity/)
 
 # Undefined
 
@@ -27,7 +27,7 @@ Our mission is to create safe and affirming environments where LGBTQIA+ individu
 - **UBI:** 605 729 334
 - **Status:** 501(c)(3) Nonprofit Organization
 - **Founded:** February 2, 2025
-- **Website:** [undefined.charity](https://undefined.charity)
+- **Website:** [dev.undefined.charity](https://dev.undefined.charity)
 - **Email:** [contact@undefined.charity](mailto:contact@undefined.charity)
 - **Phone:** +1-206-580-4666
 
