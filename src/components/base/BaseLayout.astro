@@ -129,7 +129,8 @@ const baseUrl = "https://undefined.charity";
       integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh"
       crossorigin="anonymous"
       onload="renderMathInElement(document.body);"></script>
-
+      
+    <!-- https://docs.astro.build/en/guides/view-transitions -->
     <ClientRouter fallback="swap" />
     <Tooltips interactive={false} delay={[333, 0]} />
   </head>
@@ -137,7 +138,7 @@ const baseUrl = "https://undefined.charity";
     <Background />
     <Header />
     <main id="main-content" class="flex-1">
-      <slot />
+      <slot/>
     </main>
     <Footer />
     <!-- <ObserverScript /> -->
