@@ -30,14 +30,7 @@ export default defineConfig({
       },
     }),
     AutoImport({
-      imports: [
-        "@components/common/Button.astro",
-        "@shortcodes/Accordion",
-        "@shortcodes/Notice",
-        "@shortcodes/Youtube",
-        "@shortcodes/Tabs",
-        "@shortcodes/Tab",
-      ],
+      imports: ["@components/common/Button.astro"],
     }),
     mdx(),
   ],

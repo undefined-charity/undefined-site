@@ -1,7 +1,7 @@
 ---
 title: About Undefined
 description: Learn about our 501(c)(3) nonprofit organization supporting the LGBTQIA+ community
-image: "@assets/profile/jane-doe.jpg"
+image: "@assets/logo.png"
 draft: false
 ---
 

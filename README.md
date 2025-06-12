@@ -45,7 +45,7 @@ United States
 
 ## Transparency
 
-We believe in complete transparency. You can view our official IRS documents and organizational files in our public repository: [https://github.com/undefined-nonprofit/undefined-nonprofit.github.io](https://github.com/undefined-nonprofit/undefined-nonprofit.github.io)
+We believe in complete transparency. You can view our official IRS documents and organizational files on our [Documents page](/documents) or in our public repository: [https://github.com/undefined-nonprofit/undefined-site](https://github.com/undefined-nonprofit/undefined-site)
 
 ## Website Development
 
