@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /api/*
 
-Sitemap: https://dev.undefined.charity/sitemap-index.xml
+Sitemap: https://undefined.charity/sitemap-index.xml

@@ -11,7 +11,7 @@ import remarkMath from "remark-math";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://dev.undefined.charity", // Development site URL
+  site: "https://undefined.charity", // Production site URL
   base: "/", // Update this if deploying to a subpath: "/repository-name"
   trailingSlash: "ignore",
   prefetch: {
