@@ -1,6 +1,6 @@
 ---
 title: Characters
 description: Character creation information
-image: "@assets/docs/characters/cover.jpg"
+image: "@assets/backgrounds/bwca-day.png"
 imageAlt: A white knight, painted dramatically
 ---

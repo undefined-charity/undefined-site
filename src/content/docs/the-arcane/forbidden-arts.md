@@ -1,7 +1,7 @@
 ---
 title: The Forbidden Arts
 description: A guide to the shadowed arts of demonology, summoning, and occult rituals for those who dare tread the dangerous path
-image: "@assets/docs/the-arcane/forbidden-arts/cover.jpg"
+image: "@assets/backgrounds/bwca-day.png"
 imageAlt: Painting of a person standing before a large demonic ghost
 pubDate: 2024-02-20
 modDate: 2024-03-05
