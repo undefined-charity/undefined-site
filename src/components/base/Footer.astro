@@ -2,22 +2,29 @@
 import Social from "@components/common/Social.astro";
 ---
 
-<footer class="glass container lg:my-4 lg:rounded-lg intersect:animate-fadeUp opacity-0">
+<footer
+  class="glass container lg:my-4 lg:rounded-lg intersect:animate-fadeUp opacity-0"
+>
   <div class="row py-2 lg:py-0 items-center flex-wrap-reverse">
     <div class="text-center lg:col-6 lg:mb-0 lg:text-left">
       <ul>
         <li class="m-2 inline-block">
-          <a href="/terms">&copy; Undefined 2025</a>
+          <span>&copy; Undefined 2025 - 501(c)(3) Nonprofit</span>
+        </li>
+        <li class="m-2 inline-block">
+          <span>EIN: 33-3432965</span>
         </li>
       </ul>
     </div>
-    <div class="text-center lg:col-6 lg:my-0 flex items-center justify-center lg:justify-end">
+    <div
+      class="text-center lg:col-6 lg:my-0 flex items-center justify-center lg:justify-end"
+    >
       <Social
         links={{
-          // facebook: "https://www.facebook.com/",
-          github: "https://github.com/undefined-charity",
-          // instagram: "https://www.instagram.com/",
-          // linkedIn: "https://www.linkedin.com/",
+          email: "contact@undefined.charity",
+          github:
+            "https://github.com/undefined-nonprofit/undefined-nonprofit.github.io",
+          website: "https://undefined.charity",
         }}
       />
     </div>

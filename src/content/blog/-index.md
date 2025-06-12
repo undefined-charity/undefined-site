@@ -1,4 +1,4 @@
 ---
-title: Blog Posts
-description: The blog of Jane and John Doe
+title: Community Blog
+description: Stories, insights, and updates from the Undefined community and our ongoing work supporting LGBTQIA+ individuals
 ---

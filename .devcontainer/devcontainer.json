@@ -1,22 +1,50 @@
 {
-	"name": "Node.js",
+	"name": "Astro Development Environment",
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
 
 	"forwardPorts": [4321],
+	"portsAttributes": {
+		"4321": {
+			"label": "Astro Dev Server",
+			"onAutoForward": "notify"
+		}
+	},
 
-	"postCreateCommand": "npm run clean && npm run cleaninstall && npm install && npm run build",
-	"waitFor": "postCreateCommand",
+	"postCreateCommand": "npm install",
+	"postStartCommand": "echo '🚀 Astro dev container ready! Run npm run dev to start development server on port 4321'",
+
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"astro-build.astro-vscode",
+				"bradlc.vscode-tailwindcss",
+				"esbenp.prettier-vscode",
+				"ms-vscode.vscode-typescript-next",
+				"formulahendry.auto-rename-tag",
+				"christian-kohler.path-intellisense",
+				"formulahendry.auto-close-tag",
 				"openai.chatgpt"
-			]
+			],
+			"settings": {
+				"editor.formatOnSave": true,
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"[astro]": {
+					"editor.defaultFormatter": "astro-build.astro-vscode"
+				},
+				"[typescript]": {
+					"editor.defaultFormatter": "esbenp.prettier-vscode"
+				},
+				"typescript.preferences.importModuleSpecifier": "relative",
+				"emmet.includeLanguages": {
+					"astro": "html"
+				},
+				"astro.typescript.enabled": true
+			}
 		}
 	}
-
 }

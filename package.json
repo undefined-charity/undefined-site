@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "preview": "astro preview",
     "clean": "echo Cleaning Dist... && sleep 0.5 && rm -rf dist || echo Failed to Clean Dist",
     "cleaninstall": "echo Cleaning Install... && sleep 0.5 && rm -rf node_modules || echo Failed to Clean Install",
     "postbuild": "pagefind --site dist",

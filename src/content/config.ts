@@ -62,7 +62,6 @@ const blog = defineCollection({
     }),
 });
 
-
 const home = defineCollection({
   loader: glob({ pattern: "-index.{md,mdx}", base: "./src/content/home" }),
   schema: ({ image }) =>
@@ -155,7 +154,7 @@ export const collections = {
   about,
   authors,
   blog,
- //docs,
+  //docs,
   home,
   indexCards,
   poetry,
