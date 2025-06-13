@@ -11,47 +11,31 @@ import remarkMath from "remark-math";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://undefined.charity", // Production site URL
+  site: "https://dev.undefined.dev", // Update this to your GitHub Pages URL: https://username.github.io/repository-name
   base: "/", // Update this if deploying to a subpath: "/repository-name"
   trailingSlash: "ignore",
   prefetch: {
-    prefetchAll: true,
+    prefetchAll: true
   },
   server: {
-    host: "0.0.0.0",
-    port: 4321,
+    host: '0.0.0.0',
+    port: 4321
   },
-  integrations: [
-    react(),
-    sitemap(),
-    tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
-    AutoImport({
-      imports: ["@components/common/Button.astro"],
-    }),
-    mdx(),
-  ],
+  integrations: [react(), sitemap(), tailwind({
+    config: {
+      applyBaseStyles: false
+    }
+  }), AutoImport({
+    imports: ["@components/common/Button.astro", "@shortcodes/Accordion", "@shortcodes/Notice", "@shortcodes/Youtube", "@shortcodes/Tabs", "@shortcodes/Tab"]
+  }), mdx()],
   markdown: {
-    remarkPlugins: [
-      remarkToc,
-      [
-        remarkCollapse,
-        {
-          test: "Table of contents",
-        },
-      ],
-      remarkMath,
-    ],
+    remarkPlugins: [remarkToc, [remarkCollapse, {
+      test: "Table of contents"
+    }], remarkMath],
     rehypePlugins: [[rehypeKatex, {}]],
     shikiConfig: {
-      themes: { // https://shiki.style/themes
-        light: "light-plus",
-        dark: "dark-plus",
-      } 
+      theme: "dark-plus", // https://shiki.style/themes
     },
-    extendDefaultPlugins: true,
+    extendDefaultPlugins: true
   },
 });
