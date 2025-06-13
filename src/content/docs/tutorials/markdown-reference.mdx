@@ -1,167 +1,91 @@
 ---
 title: "Markdown Reference"
 description: "Reference guide for markdown formatting in documentation"
+draft: false
 image: "@assets/backgrounds/bwca-day.png"
+imageAlt: "BWCA during the day"
 ---
 
 # Markdown Reference
 
 This page demonstrates various markdown formatting options available for documentation.
 
+## Headings
+
+# Heading 1
 ## Heading 2
-
 ### Heading 3
-
 #### Heading 4
-
 ##### Heading 5
-
 ###### Heading 6
 
 ---
 
-### Emphasis
+## Emphasis
 
-- _Everyone's_ a slave to something
-- Everyone's <ins>a slave</ins> to something
-- Everyone's a slave to **something**
-- Everyone's **_a slave_** to something
-- Everyone's ~~a slave~~ to something
-
----
-
-### Link
-
-[An inline-style link](https://reednel.com)
-
-[An inline-style link with tooltip](https://reednel.com "Reed Nelson's website")
-
-[A reference-style link][arbitrary case-insensitive reference text]
-
-[You can use numbers for reference-style link definitions][1]
-
-[reference text]: https://reednel.com
-[1]: https://reednel.com
+**Bold text**
+*Italic text*
+***Bold and italic text***
+~~Strikethrough text~~
 
 ---
 
-### Ordered List
-
-1. List item
-2. List item
-3. List item
-
----
+## Lists
 
 ### Unordered List
+- Item 1
+- Item 2
+  - Nested item 1
+  - Nested item 2
+- Item 3
 
-- List item
-- List item
-- List item
+### Ordered List
+1. First item
+2. Second item
+3. Third item
 
 ---
 
-### Code and Syntax Highlighting
+## Links and Images
 
-#### SQL
+[Link text](https://example.com)
 
-```sql
-SELECT
-  p.personID,
-  id.firstName,
-  id.lastName
-FROM
-  dbo.Person AS p
-INNER JOIN dbo.Identity AS id ON id.identityID = p.currentIdentityID
-WHERE
-  p.age > 30 AND p.eyeColor = 'grn'
+![Alt text](@assets/backgrounds/bwca-day.png "Image title")
+
+---
+
+## Code
+
+Inline `code` example.
+
+```javascript
+// Code block example
+function example() {
+  console.log("Hello, world!");
+}
 ```
 
 ---
 
-### LaTeX
+## Tables
 
-In the middle of this sentance $$\int_0^\infty x^2 dx = \frac{1}{3}$$ is an inline expression. And after that is a block expression:
-
-$$
-\int_0^\infty x^2 dx = \frac{1}{3}
-$$
-
-Before this is a block expression.
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |
+| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |
+| Row 3, Col 1 | Row 3, Col 2 | Row 3, Col 3 |
 
 ---
 
-### Button
+## Blockquotes
 
-<Button
-  label="Button"
-  link="/"
-  type="primary"
-  color="bg-gradient-to-br from-blue-500 to-pink-500"
-  newtab
-  hoverInvert
-/>
+> This is a blockquote.
+> It can span multiple lines.
 
 ---
 
-### Quote
-
-> When I saw my devil, I found him serious, thorough, profound, solemn. He was the spirit of gravity, through which all things fall.
+## Horizontal Rule
 
 ---
 
-### Notice
-
-<Notice type="note">This is a simple note.</Notice>
-
-<Notice type="tip">This is a simple note.</Notice>
-
-<Notice type="info">This is a simple note.</Notice>
-
-<Notice type="warning">This is a simple note.</Notice>
-
----
-
-### Content Examples
-
-#### On Gambling
-
-If we focus on making the best moves, we will never get the better of our opponent. When necessary, we must be willing to take the big risks and be prepared to lose everything.
-
-#### On Soldiering
-
-You should give up on becoming a soldier. Throwing your life away is not the only way to fight.
-
-#### On Soldering
-
-Maintain a coating of solder on working area of soldering iron tip. Protects the tip from oxidation.
-
----
-
-### Table
-
-| #   |    First     |     Last     |       Handle |
-| :-- | :----------: | :----------: | -----------: |
-| 1   | Row:1 Cell:1 | Row:1 Cell:2 | Row:1 Cell:3 |
-| 2   | Row:2 Cell:1 | Row:2 Cell:2 | Row:2 Cell:3 |
-| 3   | Row:3 Cell:1 | Row:3 Cell:2 | Row:3 Cell:3 |
-
----
-
-### Collapsible Content
-
-**Why would you use collapsible content?**
-
-Maybe you don't need to see everything all the time geez.
-
----
-
-### Embedded Video
-
-For embedded videos, you can use standard HTML or iframe elements.
-
----
-
-### Image
-
-![image](@assets/backgrounds/bwca-day.png "BWCA during the day")
+This is how you create a horizontal rule above this text.

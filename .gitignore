@@ -80,6 +80,7 @@ pnpm-debug.log*
 
 # build output
 dist/
+build/
 .output/
 .json/
 package-lock.json
