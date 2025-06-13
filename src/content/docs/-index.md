@@ -1,5 +1,9 @@
 ---
 title: Documentation
-description: This is the docs
+description: Official documentation and resources for Undefined nonprofit
 draft: false
 ---
+
+# Documentation
+
+This section contains official documentation and resources for Undefined nonprofit organization.
