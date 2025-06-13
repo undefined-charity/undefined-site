@@ -15,27 +15,40 @@ export default defineConfig({
   base: "/", // Update this if deploying to a subpath: "/repository-name"
   trailingSlash: "ignore",
   prefetch: {
-    prefetchAll: true
+    prefetchAll: true,
   },
   server: {
-    host: '0.0.0.0',
-    port: 4321
+    host: "0.0.0.0",
+    port: 4321,
   },
-  integrations: [react(), sitemap(), tailwind({
-    config: {
-      applyBaseStyles: false
-    }
-  }), AutoImport({
-    imports: ["@components/common/Button.astro"]
-  }), mdx()],
+  integrations: [
+    react(),
+    sitemap(),
+    tailwind({
+      config: {
+        applyBaseStyles: false,
+      },
+    }),
+    AutoImport({
+      imports: ["@components/common/Button.astro"],
+    }),
+    mdx(),
+  ],
   markdown: {
-    remarkPlugins: [remarkToc, [remarkCollapse, {
-      test: "Table of contents"
-    }], remarkMath],
+    remarkPlugins: [
+      remarkToc,
+      [
+        remarkCollapse,
+        {
+          test: "Table of contents",
+        },
+      ],
+      remarkMath,
+    ],
     rehypePlugins: [[rehypeKatex, {}]],
     shikiConfig: {
       theme: "dark-plus", // https://shiki.style/themes
     },
-    extendDefaultPlugins: true
+    extendDefaultPlugins: true,
   },
 });
