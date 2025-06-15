@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="src/assets/logo.png" style="width:80%;" alt="Undefined Logo" align="center" />
+  <img src="src/assets/logo_small.png" style="width:80%;" alt="Undefined Logo" align="center" />
 </div>
 
 ---
@@ -45,7 +45,7 @@ United States
 
 ## Transparency
 
-We believe in complete transparency. You can view our official IRS documents and organizational files on our [Documents page](/documents) or in our public repository: [https://github.com/undefined-nonprofit/undefined-site](https://github.com/undefined-nonprofit/undefined-site)
+We believe in complete transparency. You can view our official IRS documents and organizational files on our [Documents page](/documents) or in our public repository: [https://github.com/undefined-charity/undefined-site](https://github.com/undefined-charity/undefined-site)
 
 ## Website Development
 
