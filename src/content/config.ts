@@ -24,28 +24,6 @@ const social = z.object({
   youtube: z.string().optional(),
 });
 
-const about = defineCollection({
-  loader: glob({ pattern: "-index.{md,mdx}", base: "./src/content/about" }),
-  schema: ({ image }) =>
-    searchable.extend({
-      image: image().optional(),
-      imageAlt: z.string().default(""),
-    }),
-});
-
-const docs = defineCollection({
-  loader: glob({ pattern: "**\/[^_]*.{md,mdx}", base: "./src/content/docs" }),
-  schema: ({ image }) =>
-    searchable.extend({
-      pubDate: z.date().optional(),
-      modDate: z.date().optional(),
-      image: image().optional(),
-      imageAlt: z.string().default(""),
-      hideToc: z.boolean().default(false),
-      hideNav: z.boolean().default(false),
-    }),
-});
-
 const documents = defineCollection({
   loader: glob({ pattern: "-index.{md,mdx}", base: "./src/content/documents" }),
   schema: searchable,
@@ -75,8 +53,6 @@ const terms = defineCollection({
 
 // Export collections
 export const collections = {
-  about,
-  docs,
   documents,
   home,
   terms,
