@@ -6,8 +6,10 @@ This directory contains logo files for the Undefined nonprofit organization that
 
 ### Primary Logos
 
-- **logo_small.png** (199KB) - Optimized version, recommended for web use, social media, and general applications
-- **logo.png** (1.3MB) - High-resolution version, suitable for print materials and large format displays
+- **logo.svg** - Vector format, scalable to any size, recommended for all digital and print use
+- **logo_small.png** (199KB) - Optimized raster version for legacy applications
+- **logo.png** (1.3MB) - High-resolution raster version for specific print requirements
+- **logo.ai** - Adobe Illustrator source file for designers and professional printing
 
 _Note: These files are linked to the source assets to maintain a single source of truth._
 
@@ -23,13 +25,17 @@ These logos are provided for:
 
 ### Recommended Uses
 
-- **Small Logo**: Websites, social media posts, email signatures, digital presentations
-- **Large Logo**: Print materials, banners, posters, large format displays
+- **SVG Logo (Preferred)**: All websites, apps, digital media, modern print workflows
+- **Small PNG**: Email signatures, older systems that don't support SVG
+- **Large PNG**: Legacy print requirements, specific resolution needs
+- **AI File**: Professional design work, custom adaptations (contact us first)
 
 ## Download Links
 
+- [Vector Logo (SVG)](./logo.svg) - Scalable vector format (recommended)
 - [Small Logo (Web Optimized)](./logo_small.png) - 199KB PNG
 - [Large Logo (High Resolution)](./logo.png) - 1.3MB PNG
+- [Source File (Adobe Illustrator)](./logo.ai) - AI file for designers
 
 ## Questions & Support
 

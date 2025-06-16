@@ -1,5 +1,5 @@
 ---
-image: "@assets/logo_small.png"
+image: "@assets/logo.svg"
 imageAlt: Undefined charity logo
 title: Creating Safe Spaces for LGBTQIA+ Community
 content: >
