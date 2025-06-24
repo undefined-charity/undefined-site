@@ -40,11 +40,13 @@ When you participate in Undefined events, you have rights and responsibilities t
 ### Venue Care & Respect
 
 **Keep Our Spaces Clean**:
+
 - Remove all trash or dispose of it in appropriate receptacles
 - Leave venues as clean as or cleaner than you found them
 - Help maintain the spaces that welcome our community
 
 **Respect Property & People**:
+
 - Do not damage or break venue property, equipment, or furnishings
 - Treat venue staff, volunteers, and fellow attendees with kindness and respect
 - Be considerate of noise levels and venue rules
@@ -53,6 +55,7 @@ When you participate in Undefined events, you have rights and responsibilities t
 ### Community Safety
 
 **If You See Something, Say Something**:
+
 - Report any concerns, unsafe behavior, or violations to event organizers immediately
 - Help us maintain a safe, welcoming environment for everyone
 - We're here to make things right - don't hesitate to speak up
