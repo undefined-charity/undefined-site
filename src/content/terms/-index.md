@@ -194,7 +194,9 @@ For privacy practices specific to our events, including photography policies and
 
 ### Policy Updates
 
-We may change the terms of this policy from time to time. You are responsible for regularly reviewing this policy so that you are aware of any changes to it. If you continue to use our event ticket shop after the time we state the changes will take effect, you will have accepted the changes.
+We may change these terms and conditions from time to time. You are responsible for regularly reviewing these terms so that you are aware of any changes. If you continue to use our services after the time we state the changes will take effect, you will have accepted the changes.
+
+Historic versions of these terms and conditions can be found at: [https://github.com/undefined-charity/undefined-site/commits/main/src/content/terms/-index.md](https://github.com/undefined-charity/undefined-site/commits/main/src/content/terms/-index.md)
 
 This policy shall be governed by and construed in accordance with the laws of the State of Washington and the United States, and you agree to submit to the exclusive jurisdiction of the courts located in Washington State.
 
