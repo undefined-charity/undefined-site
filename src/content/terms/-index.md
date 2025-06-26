@@ -25,6 +25,7 @@ When you participate in Undefined events, you have rights and responsibilities t
 
 - This may not be possible for large group photos or if we can't see your wristband
 - Other attendees or members of the public may take photos, which we cannot control
+- Do not join group photos with the expectation that you will be blurred out - opt-out wristbands work best for candid shots and smaller groups
 - If you see a photo of yourself that you wish to have removed, contact us immediately and we will take it down
 
 ### Consent is Critical
@@ -51,6 +52,12 @@ When you participate in Undefined events, you have rights and responsibilities t
 - Treat venue staff, volunteers, and fellow attendees with kindness and respect
 - Be considerate of noise levels and venue rules
 - Follow all venue-specific guidelines and policies
+
+**Food Safety & Wildlife Precautions**:
+
+- Some venues (like TRC) have specific food handling and safety instructions that must always be followed
+- Properly store and dispose of all food and scented items according to venue requirements
+- Follow all wildlife safety protocols, including bear safety measures where applicable
 
 ### Community Safety
 
@@ -88,6 +95,20 @@ When you participate in Undefined events, you have rights and responsibilities t
 ## Website Terms of Use
 
 By using this website, you agree to comply with these terms and conditions. Undefined reserves the right to modify these terms at any time.
+
+## Limitation of Liability
+
+**Event Participation**: You participate in Undefined events at your own risk. Undefined, its board members, volunteers, and staff are not responsible for any injuries, damages, losses, or accidents that may occur during events or related activities.
+
+**Property and Personal Items**: Undefined is not responsible for lost, stolen, or damaged personal property at events or venues.
+
+**Third-Party Venues**: Many events are held at third-party venues. Undefined is not responsible for venue conditions, safety, or policies beyond our direct control.
+
+**Assumption of Risk**: By attending events, you acknowledge and assume all risks associated with participation, including but not limited to physical activity, outdoor conditions, wildlife encounters, and interactions with other participants.
+
+**Release of Claims**: To the fullest extent permitted by law, you agree to release and hold harmless Undefined from any and all claims, damages, or liabilities arising from your participation in events or use of our services.
+
+**Nonprofit Status**: As a 501(c)(3) nonprofit organization, Undefined operates with limited resources and assets. This limitation of liability reflects our organizational capacity and mission-driven nature.
 
 ## Privacy Policy
 
@@ -128,8 +149,6 @@ We may also use your personal data for our legitimate interests, including deali
 We may share your personal data with any service providers, sub-contractors and agents that we may appoint to perform functions on our behalf and in accordance with our instructions, including payment providers, event ticketing providers, email communication providers, IT service providers, accountants, auditors and lawyers.
 
 Under certain circumstances we may have to disclose your personal data under applicable laws and/or regulations, for example, as part of anti-money laundering processes or protect a third party's rights, property, or safety.
-
-We may also share your personal data in connection with, or during negotiations of, any merger, sale of assets, consolidation or restructuring, financing, or acquisition of all or a portion of our business by or into another company.
 
 ### Where We Hold and Process Your Personal Data
 
@@ -222,6 +241,8 @@ If you see a photo of yourself that you wish to have removed:
 
 - Email us immediately at [contact@undefined.charity](mailto:contact@undefined.charity?subject=Photo%20Removal%20Request)
 - Include the location/link of the photo and we will remove it promptly
+- We may request validation that you are the person in the photo before removal
+- For group photos, we may blur or block out only the individual rather than removing the entire photo
 
 ### Violations
 
@@ -229,4 +250,4 @@ Violations of our community guidelines, especially regarding consent, may result
 
 ---
 
-_Last updated: June 24, 2025_
+_Last updated: June 26, 2025_
