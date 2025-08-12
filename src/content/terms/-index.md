@@ -38,6 +38,20 @@ When you participate in Undefined events, you have rights and responsibilities t
 
 **No means no** - respect all boundaries immediately and without question.
 
+#### Touch‑Consent Stickers (Optional)
+
+We offer optional stickers to indicate comfort levels with touch. Stickers are voluntary, and consent is still required at all times.
+
+- Green: “OK to touch” (for casual, non‑intimate touch like hugs or pats). If unsure, ask first.
+- Yellow: “Ask first” — always get clear verbal consent before any touch.
+- Red: “Don’t touch” — no physical contact.
+
+Guidelines:
+
+- Stickers are guidance, not blanket permission. Consent can be changed or withdrawn at any time.
+- If someone doesn’t have a sticker or you can’t see it, ask before touching.
+- “No” or “Stop” must be honored immediately, regardless of sticker color.
+
 ### Venue Care & Respect
 
 **Keep Our Spaces Clean**:
@@ -252,4 +266,4 @@ Violations of our community guidelines, especially regarding consent, may result
 
 ---
 
-_Last updated: June 26, 2025_
+_Last updated: August 12, 2025_
