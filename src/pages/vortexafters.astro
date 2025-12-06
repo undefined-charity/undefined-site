@@ -1,3 +1,52 @@
 ---
-return Astro.redirect('https://donate.stripe.com/cNi9ATf2wbMRcPrfMc1oI00', 302);
+const redirectUrl = 'https://donate.stripe.com/cNi9ATf2wbMRcPrfMc1oI00';
+const message = 'Redirecting you to our donation partner…';
 ---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content={`1;url=${redirectUrl}`} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #030712;
+        color: #f8fafc;
+      }
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+      }
+      main {
+        text-align: center;
+        max-width: 32rem;
+        line-height: 1.6;
+      }
+    </style>
+    <script is:inline>
+      const dest = {JSON.stringify(redirectUrl)};
+      window.addEventListener('DOMContentLoaded', () => {
+        window.location.replace(dest);
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Hang tight</h1>
+      <p>{message}</p>
+      <p>
+        If nothing happens, click
+        <a href={redirectUrl}>continue to Stripe</a>.
+      </p>
+    </main>
+    <noscript>
+      Redirecting requires JavaScript. Please follow the link above if you are
+      not redirected automatically.
+    </noscript>
+  </body>
+</html>
