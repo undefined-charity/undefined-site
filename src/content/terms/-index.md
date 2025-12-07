@@ -5,7 +5,7 @@ description: Community guidelines, participation terms, and legal notices for Un
 
 # Terms & Conditions
 
-## Community Event Guidelines
+## Community Event Standards
 
 When you participate in Undefined events, you have rights and responsibilities that keep our community safe, welcoming, and fun for everyone. For details about how we handle personal information, please review our [Privacy Policy](/privacy).
 
@@ -27,6 +27,12 @@ When you participate in Undefined events, you have rights and responsibilities t
 - Other attendees or members of the public may take photos, which we cannot control
 - Do not join group photos with the expectation that you will be blurred out - opt-out wristbands work best for candid shots and smaller groups
 - If you see a photo of yourself that you wish to have removed, contact us immediately and we will take it down
+
+**Personal Recording & Streaming**:
+
+- Do not record audio, take video, or livestream anyone without explicit consent from every identifiable person.
+- Organizers may direct you to stop recording or to delete media that violates these rules or jeopardizes participant safety.
+- Media captured for personal use must still honor opt-out wristbands and any private-space restrictions explained by staff.
 
 ### Consent is Critical
 
@@ -76,6 +82,19 @@ Everyone has the right to enjoy Undefined programs without harassment, undue bur
 
 The board may also bar or limit someone's participation based on credible information from other community organizations, including incidents that occurred off-site or in other spaces. Suspensions may be temporary, indefinite, or permanent and may be issued with or without prior warning. Refunds for revoked participation follow the Event Refunds policy below unless otherwise determined by the board.
 
+### Telegram Community Conduct
+
+Our official Telegram groups extend the same expectations set for in-person gatherings:
+
+- Treat every member with respect—harassment, hate speech, doxxing, threats, or discriminatory language are prohibited.
+- Keep chats free of spam, solicitation, or disruptive content that derails community support spaces.
+- Do not share screenshots, recordings, or member information outside the group without permission.
+- Moderators may delete content, mute participants, or remove members at their discretion to protect community safety.
+
+Participation in our Telegram spaces is a privilege, not a right, and is subject to the same suspension rules outlined above.
+
+## Event Operations
+
 ### Event Refunds
 
 **Up to Two Weeks Before Event**:
@@ -100,9 +119,25 @@ The board may also bar or limit someone's participation based on credible inform
 - Credit card and third-party processing fees are not refundable
 - In some cases, these fees can be applied as credit toward other tickets at the same event
 
+### Accessibility & Accommodations
+
+We strive to make every gathering accessible. Contact us at [contact@undefined.charity](mailto:contact@undefined.charity) or note your needs during registration as early as possible—ideally two weeks before the event—so we can coordinate with venues and vendors. While we may not be able to fulfill every request, we will make good-faith efforts, communicate available options, and propose alternatives when feasible.
+
+### Ticket Transfers & Resale
+
+Tickets are non-transferable without prior approval from Undefined. To request a transfer, contact us with the recipient's name and contact information. Unauthorized resale, auctioning, or price markups (scalping) are prohibited and may result in ticket cancellation without refund.
+
+### Event Changes & Force Majeure
+
+Undefined may modify, postpone, or cancel an event due to circumstances beyond our control, including severe weather, public health guidance, venue issues, or other force majeure events. In such cases, our liability is limited to the remedies described in the Event Refunds policy unless otherwise required by law.
+
 ## Website Terms of Use
 
 By using this website, you agree to comply with these terms and conditions. Undefined reserves the right to modify these terms at any time.
+
+### Third-Party Links
+
+Our website may contain links to third-party websites. We are not responsible for the content or privacy practices of these external sites.
 
 ## Limitation of Liability
 
@@ -118,31 +153,9 @@ By using this website, you agree to comply with these terms and conditions. Unde
 
 **Nonprofit Status**: As a 501(c)(3) nonprofit organization, Undefined operates with limited resources and assets. This limitation of liability reflects our organizational capacity and mission-driven nature.
 
-## Privacy Policy
+### Support & Educational Content
 
-For detailed information on our data practices, personal information rights, and compliance measures, please review the dedicated [Privacy Policy](/privacy). That policy explains how we collect, process, retain, and protect data as part of your interaction with Undefined.
-
-## Policy Updates
-
-We may change these terms and conditions from time to time. You are responsible for regularly reviewing these terms so that you are aware of any changes. If you continue to use our services after the time we state the changes will take effect, you will have accepted the changes.
-
-Historic versions of these terms and conditions can be found at: [https://github.com/undefined-charity/undefined-site/commits/main/src/content/terms/-index.md](https://github.com/undefined-charity/undefined-site/commits/main/src/content/terms/-index.md)
-
-This policy shall be governed by and construed in accordance with the laws of the State of Washington and the United States, and you agree to submit to the exclusive jurisdiction of the courts located in Washington State.
-
-## Source Code License
-
-The source code for undefined.charity is protected under the MIT License.
-
-### The MIT License (MIT)
-
-**Copyright (c) 2025 Undefined**
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Our support groups, chat discussions, and educational workshops provide peer-led community care, not clinical therapy, medical treatment, or legal advice. Nothing shared in our programs should be interpreted as a substitute for professional services. Always seek qualified help from licensed providers for medical, mental-health, or legal needs, and contact emergency services if you or someone else is in immediate danger.
 
 ## Nonprofit Information
 
@@ -154,9 +167,9 @@ Undefined is a registered 501(c)(3) nonprofit organization. Donations may be tax
 
 The information provided on this website is for general informational purposes only. While we strive to provide accurate and up-to-date information, we make no warranties about the completeness, reliability, or accuracy of this information.
 
-### Third-Party Links
+## Privacy & Data Protection
 
-Our website may contain links to third-party websites. We are not responsible for the content or privacy practices of these external sites.
+For detailed information on our data practices, personal information rights, and compliance measures, please review the dedicated [Privacy Policy](/privacy). That policy explains how we collect, process, retain, and protect data as part of your interaction with Undefined.
 
 ## Contact & Enforcement
 
@@ -179,6 +192,28 @@ If you see a photo of yourself that you wish to have removed:
 ### Violations
 
 Violations of our community guidelines—especially around consent, harassment, and safety—may result in immediate removal from events and indefinite suspension of your right to attend Undefined programs or participate in official chat spaces. The board may impose additional restrictions based on conduct reported by other community organizations whenever it deems necessary to protect participants.
+
+## Policy Updates
+
+We may change these terms and conditions from time to time. You are responsible for regularly reviewing these terms so that you are aware of any changes. If you continue to use our services after the time we state the changes will take effect, you will have accepted the changes.
+
+Historic versions of these terms and conditions can be found at: [https://github.com/undefined-charity/undefined-site/commits/main/src/content/terms/-index.md](https://github.com/undefined-charity/undefined-site/commits/main/src/content/terms/-index.md)
+
+This policy shall be governed by and construed in accordance with the laws of the State of Washington and the United States, and you agree to submit to the exclusive jurisdiction of the courts located in Washington State.
+
+## Source Code License
+
+The source code for undefined.charity is protected under the MIT License.
+
+### The MIT License (MIT)
+
+**Copyright (c) 2025 Undefined**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
 
