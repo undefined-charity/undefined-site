@@ -1,0 +1,28 @@
+---
+import BaseLayout from "@components/base/BaseLayout.astro";
+import PageHeader from "@components/common/PageHeader.astro";
+import { getIndex } from "@lib/contentParser";
+import { render } from "astro:content";
+import type { PrivacyEntry } from "@/types";
+
+const entry = (await getIndex("privacy")) as PrivacyEntry;
+const { title, description } = entry.data;
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={title} description={description}>
+  <PageHeader title={title} />
+  <section class="section">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <div class="glass rounded-lg p-8 intersect:animate-fade opacity-0">
+            <div class="content prose prose-lg max-w-none">
+              <Content />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

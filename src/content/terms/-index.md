@@ -1,13 +1,13 @@
 ---
 title: Terms & Conditions
-description: Community guidelines, privacy policy, and terms for Undefined nonprofit events and services
+description: Community guidelines, participation terms, and legal notices for Undefined nonprofit events and services
 ---
 
 # Terms & Conditions
 
 ## Community Event Guidelines
 
-When you participate in Undefined events, you have rights and responsibilities that keep our community safe, welcoming, and fun for everyone.
+When you participate in Undefined events, you have rights and responsibilities that keep our community safe, welcoming, and fun for everyone. For details about how we handle personal information, please review our [Privacy Policy](/privacy).
 
 ### Privacy & Photography
 
@@ -30,27 +30,15 @@ When you participate in Undefined events, you have rights and responsibilities t
 
 ### Consent is Critical
 
-**Explicit consent is required** for all physical contact, including but not limited to:
+Consent must be explicit, informed, and freely given every single time. It cannot be implied by past interactions, social cues, or silence. You are responsible for confirming consent before any interaction and for stopping immediately if it is revoked.
+
+**Consent is mandatory** for all physical contact, including but not limited to:
 
 - Touching, hugging, or any physical interaction
 - Intimate contact of any kind
-- Any activity involving bodily contact
+- Any activity involving bodily contact or physical assist
 
-**No means no** - respect all boundaries immediately and without question.
-
-#### Touch‑Consent Stickers (Optional)
-
-We offer optional stickers to indicate comfort levels with touch. Stickers are voluntary, and consent is still required at all times.
-
-- Green: “OK to touch” (for casual, non‑intimate touch like hugs or pats). If unsure, ask first.
-- Yellow: “Ask first” — always get clear verbal consent before any touch.
-- Red: “Don’t touch” — no physical contact.
-
-Guidelines:
-
-- Stickers are guidance, not blanket permission. Consent can be changed or withdrawn at any time.
-- If someone doesn’t have a sticker or you can’t see it, ask before touching.
-- “No” or “Stop” must be honored immediately, regardless of sticker color.
+**Ask every time** – if you have not clearly heard “yes,” you do not have consent. **No means no** and “stop,” “not now,” or any expression of hesitation must be honored immediately. Pressuring someone, following them, or attempting to wear them down is unacceptable and will result in removal from the event.
 
 ### Venue Care & Respect
 
@@ -81,6 +69,12 @@ Guidelines:
 - Help us maintain a safe, welcoming environment for everyone
 - We're here to make things right - don't hesitate to speak up
 - All reports will be taken seriously and handled appropriately
+
+### Participant Rights & Board Authority
+
+Everyone has the right to enjoy Undefined programs without harassment, undue burden, or safety risks. To uphold that commitment, the Undefined board may suspend or revoke a person's ability to attend events, volunteer, or participate in any official chat groups at any time and for any reason. While the board retains absolute discretion, suspensions typically occur when an individual presents a safety risk to themselves or others, creates substantial disruption, refuses to respect consent, or otherwise places an undue burden on the community or its organizers.
+
+The board may also bar or limit someone's participation based on credible information from other community organizations, including incidents that occurred off-site or in other spaces. Suspensions may be temporary, indefinite, or permanent and may be issued with or without prior warning. Refunds for revoked participation follow the Event Refunds policy below unless otherwise determined by the board.
 
 ### Event Refunds
 
@@ -126,87 +120,9 @@ By using this website, you agree to comply with these terms and conditions. Unde
 
 ## Privacy Policy
 
-### Introduction
+For detailed information on our data practices, personal information rights, and compliance measures, please review the dedicated [Privacy Policy](/privacy). That policy explains how we collect, process, retain, and protect data as part of your interaction with Undefined.
 
-This policy sets out how we collect, process and hold your personal data if you visit our event ticket shop or otherwise provide personal data to us. We are Undefined of 119 1ST AVE NW # 370, Ephrata, WA, USA 98823. We are the data controller of your personal data.
-
-This policy affects your legal rights and obligations so please read it carefully. If you have any questions, please contact us at [contact@undefined.charity](mailto:contact@undefined.charity).
-
-### Personal Data We Collect
-
-We collect, process, store and use personal data when you book a ticket and buy any of our associated products and services to an event including your name, address and email address together with payment information. We may also collect personal data that you give to us about other people if you register them to attend an event. You agree that you have notified any other person whose personal data that you provide to us of this privacy notice and, where necessary, obtained their consent so that we can lawfully process their personal data in accordance with this policy.
-
-All personal data that you provide to us must be true, complete and accurate. If you provide us with inaccurate or false data, and we suspect or identify fraud, we will record this.
-
-You do not need to provide us with any personal data to view our event ticket shop. However, we may still collect the information set under the Data we automatically collect section of this policy, and marketing communications in accordance with the Marketing Communications section of this policy.
-
-When you contact us by email or post, we may keep a record of the correspondence and we may also record any telephone call we have with you.
-
-### Data We Automatically Collect
-
-When you visit our event ticket shop, we, or third parties on our behalf, automatically collect and store information about your device and your activities. This information could include (a) your computer or other device's unique ID number; (b) technical information about your device such as type of device, web browser or operating system; (c) your preferences and settings such as time zone and language; and (d) statistical data about your browsing actions and patterns. We collect this information using cookies in accordance with the Cookie section of this policy and we use the information we collect on an anonymous basis to improve our event ticket shop, our events and the products and services we provide, and for analytical and research purposes.
-
-### Marketing Communications
-
-If you opt in to receive marketing communications from us you consent to the processing of your data to send you such communications, which may include newsletters, blog posts, surveys and information about new events. We retain a record of your consent.
-
-You can choose to no longer receive marketing communications by contacting us at [contact@undefined.charity](mailto:contact@undefined.charity) or clicking unsubscribe from a marketing email. If you do unsubscribe to marketing communications, it may take up to 5 business days for your new preferences to take effect. We shall therefore retain your personal data in our records for marketing purposes until you notify us that you no longer wish to receive marketing emails from us.
-
-### Lawful Processing of Your Personal Data
-
-We will use your personal data in order to comply with our contractual obligation to supply to you your tickets to an event and any associated products and services, including to contact you with any information relating to the event or your purchases, to deliver the event and your purchases to you in accordance with any requests you make and that we agree to, and to deal with any questions, comments or complaints you have in relation to the event or your purchases.
-
-We may also use your personal data for our legitimate interests, including dealing with any customer services you require, enforcing the terms of any other agreement between us, for regulatory and legal purposes (for example anti-money laundering), for audit purposes and to contact you about changes to this policy.
-
-### Who Do We Share Your Data With?
-
-We may share your personal data with any service providers, sub-contractors and agents that we may appoint to perform functions on our behalf and in accordance with our instructions, including payment providers, event ticketing providers, email communication providers, IT service providers, accountants, auditors and lawyers.
-
-Under certain circumstances we may have to disclose your personal data under applicable laws and/or regulations, for example, as part of anti-money laundering processes or protect a third party's rights, property, or safety.
-
-### Where We Hold and Process Your Personal Data
-
-Your personal data is primarily stored and processed in the United States. Some or all of your personal data may be stored or transferred to other countries for operational reasons, including if our service providers or their servers are based outside of the United States. We shall only transfer your personal data to organizations that have provided adequate safeguards in respect of your personal data and in compliance with applicable US privacy laws.
-
-### Cookies
-
-A cookie is a small text file containing a unique identification number that is transferred (through your browser) from a website to the hard drive of your computer. The cookie identifies your browser but will not let a website know your name and/or address. These files are then used by websites to identify when users revisit that website.
-
-Our event ticket shop uses cookies so that we can recognise you when you return and personalise your settings and preferences. Most browsers are initially set up to accept cookies. You can change your browser settings either to notify you when you have received a cookie, or to refuse to accept cookies. Please note that our event ticket shop may not operate efficiently if you refuse to accept cookies.
-
-We also use Google Analytics to monitor how the event ticket shop is used. Google Analytics collects information anonymously and generates reports detailing information such as the number of visits to the event ticket shop, where visitors generally came from, how long they stayed on the event ticket shop, and which pages they visited. Google Analytics places several persistent cookies on your computer's hard drive. If you do not agree to this you can disable persistent cookies in your browser. This will prevent Google Analytics from logging your visits.
-
-### Security
-
-We shall process your personal data in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures. All information you provide to us is stored on our secure servers. Any payment transactions are encrypted using SSL technology.
-
-Where we have given, or you have chosen a password, you are responsible for keeping this password confidential.
-
-However, you acknowledge that no system can be completely secure. Therefore, although we take these steps to secure your personal data, we do not promise that your personal data will always remain completely secure.
-
-### Your Privacy Rights
-
-You have the right to obtain from us a copy of the personal data that we hold for you, and to require us to correct errors in the personal data if it is inaccurate or incomplete. You also have the right at any time to require that we delete your personal data. To exercise these rights, or any other rights you may have under applicable laws, please contact us at [contact@undefined.charity](mailto:contact@undefined.charity).
-
-Please note, we reserve the right to charge an administrative fee if your request is manifestly unfounded or excessive.
-
-If you have any complaints in relation to this policy or otherwise in relation to our processing of your personal data, you may contact relevant US consumer protection agencies or state attorney general offices. You may also have rights under applicable state privacy laws, including but not limited to the California Consumer Privacy Act (CCPA) if you are a California resident.
-
-Our event ticket shop may contain links to other sites of interest. Once you have used these links to leave our event ticket shop, you should note that we do not have any control over that other site. Therefore, we cannot be responsible for the protection and privacy of any information which you provide whilst visiting such sites and such sites are not governed by this policy. You should exercise caution and look at the privacy policy applicable to the site in question.
-
-### Data Retention
-
-If you register with us, we shall retain your personal data until you close your account.
-
-If you receive marketing communications from us, we shall retain your personal data until you opt out of receiving such communications.
-
-If you have otherwise booked a ticket or associated products and services with us or contacted us with a question or comment, we shall retain your personal data for 6 months following such contact to respond to any further queries you might have.
-
-### Event-Specific Privacy Practices
-
-For privacy practices specific to our events, including photography policies and opt-out procedures, please see our Community Event Guidelines above.
-
-### Policy Updates
+## Policy Updates
 
 We may change these terms and conditions from time to time. You are responsible for regularly reviewing these terms so that you are aware of any changes. If you continue to use our services after the time we state the changes will take effect, you will have accepted the changes.
 
@@ -262,8 +178,8 @@ If you see a photo of yourself that you wish to have removed:
 
 ### Violations
 
-Violations of our community guidelines, especially regarding consent, may result in removal from events and exclusion from future activities.
+Violations of our community guidelines—especially around consent, harassment, and safety—may result in immediate removal from events and indefinite suspension of your right to attend Undefined programs or participate in official chat spaces. The board may impose additional restrictions based on conduct reported by other community organizations whenever it deems necessary to protect participants.
 
 ---
 
-_Last updated: August 12, 2025_
+_Last updated: December 7, 2025_

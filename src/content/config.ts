@@ -51,9 +51,15 @@ const terms = defineCollection({
   schema: searchable,
 });
 
+const privacy = defineCollection({
+  loader: glob({ pattern: "-index.{md,mdx}", base: "./src/content/privacy" }),
+  schema: searchable,
+});
+
 // Export collections
 export const collections = {
   documents,
   home,
   terms,
+  privacy,
 };

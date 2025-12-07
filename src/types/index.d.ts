@@ -6,8 +6,9 @@ export type GenericEntry = CollectionEntry<CollectionKey>;
 export type DocumentEntry = CollectionEntry<"documents">;
 export type HomeEntry = CollectionEntry<"home">;
 export type TermsEntry = CollectionEntry<"terms">;
+export type PrivacyEntry = CollectionEntry<"privacy">;
 
-export type SearchableEntry = DocumentEntry | HomeEntry | TermsEntry;
+export type SearchableEntry = DocumentEntry | HomeEntry | TermsEntry | PrivacyEntry;
 
 export type SocialLinks = {
   discord?: string;
