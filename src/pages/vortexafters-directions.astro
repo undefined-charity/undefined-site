@@ -1,0 +1,109 @@
+---
+import BaseLayout from "@components/base/BaseLayout.astro";
+import PageHeader from "@components/common/PageHeader.astro";
+---
+
+<BaseLayout
+  title="Vortex Afters | Directions"
+  description="Directions and arrival information for Undefined's Vortex Afters event at The Old Rainier Brewery in Seattle."
+>
+  <PageHeader
+    title="Vortex Afters Directions"
+    description="Plan your arrival at The Old Rainier Brewery and find key logistics for Vortex Afters."
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-8">
+          <div class="glass rounded-lg p-8 space-y-10">
+            <div>
+              <p class="text-sm uppercase tracking-wide text-blue-400">Building</p>
+              <h2 class="h3 mb-2">The Old Rainier Brewery</h2>
+              <p>3100 Airport Way S<br />Seattle, WA 98134</p>
+            </div>
+
+            <div>
+              <h3 class="h4 mb-4">Parking & Arrival</h3>
+              <ul class="list-disc pl-6 space-y-3">
+                <li>
+                  <strong>Parking:</strong>
+                  If you require parking, please use the main lot near Lula Coffee:
+                  <a href="https://maps.app.goo.gl/uqnUauBGkJxYAEmJ6" target="_blank" rel="noopener">
+                    https://maps.app.goo.gl/uqnUauBGkJxYAEmJ6
+                  </a>
+                </li>
+                <li>
+                  <strong>Entrance:</strong>
+                  The guest entrance door is located around the back on S Stevens St:
+                  <a href="https://maps.app.goo.gl/UTwotx9MThe5WFU47" target="_blank" rel="noopener">
+                    https://maps.app.goo.gl/UTwotx9MThe5WFU47
+                  </a>.
+                  Rideshare (Uber/Lyft) may drop you off here. Note: This area is single-lane in places.
+                </li>
+                <li>
+                  <strong>Transit:</strong>
+                  Please plan safe transportation. Do not drink and drive.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="h4 mb-4">Entering the Building</h3>
+              <figure class="mb-6">
+                <img
+                  src="/images/door.png"
+                  alt="Guest entrance door at The Old Rainier Brewery"
+                  class="w-full rounded-lg border border-slate-700/50"
+                  loading="lazy"
+                />
+                <figcaption class="text-sm text-slate-400 mt-2">
+                  Guest entrance located off S Stevens St (reference above).
+                </figcaption>
+              </figure>
+              <ol class="list-decimal pl-6 space-y-3">
+                <li>
+                  Go to the guest entrance door (same location as:
+                  <a href="https://maps.app.goo.gl/UTwotx9MThe5WFU47" target="_blank" rel="noopener">
+                    https://maps.app.goo.gl/UTwotx9MThe5WFU47
+                  </a>
+                  ).
+                </li>
+                <li>The door will be unlocked — pull the silver handle firmly to enter.</li>
+                <li>
+                  Once inside, turn right and proceed up two floors to Level 6. You may use the elevator or the stairs.
+                  <div class="text-sm text-slate-400">
+                    Important: Do not hold the elevator doors — it will go out of service (use the door open button if needed).
+                  </div>
+                </li>
+                <li>On Level 6, proceed down the hallway and follow the signs to the event.</li>
+              </ol>
+            </div>
+
+            <div>
+              <h3 class="h4 mb-4">Restrooms</h3>
+              <p>
+                There is only one bathroom in the event space. Please be considerate, do not linger, and plan accordingly before arriving.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-lg bg-blue-600/20 border border-blue-600/40 space-y-3">
+              <h3 class="h5">Support Vortex Afters</h3>
+              <p>
+                This event is free to all, however the event space charges $20 per person. Undefined Charity will cover the cost,
+                but if you'd like to chip in we'd greatly appreciate it.
+              </p>
+              <p class="font-semibold">How to help</p>
+              <a
+                href="https://undefined.charity/vortexafters"
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition"
+              >
+                Donate to Vortex Afters
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
