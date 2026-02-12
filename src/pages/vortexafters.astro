@@ -28,13 +28,12 @@ const message = 'Redirecting you to our donation partner…';
         line-height: 1.6;
       }
     </style>
-    <script is:inline>
-      const dest = {JSON.stringify(redirectUrl)};
-      window.addEventListener('DOMContentLoaded', () => {
-        window.location.replace(dest);
-      });
-    </script>
-  </head>
+	    <script is:inline define:vars={{ redirectUrl }}>
+	      window.addEventListener("DOMContentLoaded", () => {
+	        window.location.replace(redirectUrl);
+	      });
+	    </script>
+	  </head>
   <body>
     <main>
       <h1>Hang tight</h1>

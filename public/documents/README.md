@@ -1,6 +1,6 @@
-# Undefined Logo Assets
+# Undefined Marketing Assets
 
-This directory contains logo files for the Undefined nonprofit organization that are available for public use.
+This directory contains logo files and the official letterhead template for the Undefined nonprofit organization that are available for public use.
 
 ## Available Files
 
@@ -12,6 +12,10 @@ This directory contains logo files for the Undefined nonprofit organization that
 - **logo.psd** - Photoshop source file for raster editing and design work
 
 _Note: These files are linked to the source assets to maintain a single source of truth._
+
+### Templates
+
+- **letterhead.dotx** - Microsoft Word template for official correspondence
 
 ## Usage Guidelines
 
@@ -36,6 +40,7 @@ These logos are provided for:
 - [High Resolution PNG](./logo.png) - 1.3MB PNG
 - [Source File (Adobe Illustrator)](./logo.ai) - AI file for designers
 - [Source File (Photoshop)](./logo.psd) - PSD file for raster editing
+- [Letterhead Template (.dotx)](./files/letterhead.dotx) - Microsoft Word template
 
 ## Questions & Support
 

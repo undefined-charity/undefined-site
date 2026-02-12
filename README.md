@@ -47,6 +47,10 @@ United States
 
 We believe in complete transparency. You can view our official IRS documents and organizational files on our [Documents page](/documents) or in our public repository: [https://github.com/undefined-charity/undefined-site](https://github.com/undefined-charity/undefined-site)
 
+## Marketing Assets
+
+Our public logo files and official letterhead template are available on the Documents page and in the `public/documents/` directory.
+
 ## Website Development
 
 This website is built using Astro JS, Tailwind CSS, and TypeScript to provide a fast, accessible, and modern web experience for our community.

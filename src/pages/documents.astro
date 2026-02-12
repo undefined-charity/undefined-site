@@ -1,6 +1,204 @@
 ---
 import BaseLayout from "@components/base/BaseLayout.astro";
 import PageHeader from "@components/common/PageHeader.astro";
+import { readdirSync } from "node:fs";
+import path from "node:path";
+
+type DocumentLink = {
+  fileName: string;
+  href: string;
+  label: string;
+};
+
+type MeetingEntry = {
+  dateKey: string;
+  formattedDate: string;
+  kind: "Agenda" | "Minutes";
+  link: DocumentLink;
+};
+
+type MeetingGroup = {
+  dateKey: string;
+  formattedDate: string;
+  agenda?: DocumentLink;
+  minutes?: DocumentLink;
+};
+
+const PUBLIC_DOCUMENTS_DIR = path.join(process.cwd(), "public", "documents");
+
+function listPdfFiles(subdir: string) {
+  const dir = path.join(PUBLIC_DOCUMENTS_DIR, subdir);
+  try {
+    return readdirSync(dir, { withFileTypes: true })
+      .filter(
+        (entry) =>
+          (entry.isFile() || entry.isSymbolicLink()) &&
+          entry.name.toLowerCase().endsWith(".pdf"),
+      )
+      .map((entry) => entry.name);
+  } catch {
+    return [];
+  }
+}
+
+function publicPdfHref(subdir: string, fileName: string) {
+  return `/documents/${subdir}/${encodeURIComponent(fileName)}`;
+}
+
+function parseMeetingEntry(fileName: string): MeetingEntry | null {
+  const match = fileName.match(
+    /^(\d{4})-(\d{2})-(\d{2})-(Agenda|Minutes)\.pdf$/i,
+  );
+  if (!match) return null;
+
+  const year = Number.parseInt(match[1] ?? "", 10);
+  const month = Number.parseInt(match[2] ?? "", 10);
+  const day = Number.parseInt(match[3] ?? "", 10);
+  const kind = (match[4] ?? "").toLowerCase() === "minutes" ? "Minutes" : "Agenda";
+
+  const date = new Date(Date.UTC(year, month - 1, day));
+  const formattedDate = new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "2-digit",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+
+  return {
+    dateKey: `${match[1]}-${match[2]}-${match[3]}`,
+    formattedDate,
+    kind,
+    link: {
+      fileName,
+      href: publicPdfHref("meetings", fileName),
+      label: `${kind} PDF`,
+    },
+  };
+}
+
+function buildMeetingGroups() {
+  const files = listPdfFiles("meetings");
+  const groupsMap = new Map<string, MeetingGroup>();
+  const otherDocs: DocumentLink[] = [];
+
+  for (const fileName of files) {
+    const entry = parseMeetingEntry(fileName);
+    if (!entry) {
+      otherDocs.push({
+        fileName,
+        href: publicPdfHref("meetings", fileName),
+        label: fileName.replace(/\.pdf$/i, ""),
+      });
+      continue;
+    }
+
+    const group =
+      groupsMap.get(entry.dateKey) ?? {
+        dateKey: entry.dateKey,
+        formattedDate: entry.formattedDate,
+      };
+
+    if (entry.kind === "Agenda") {
+      group.agenda = entry.link;
+    } else {
+      group.minutes = entry.link;
+    }
+
+    groupsMap.set(entry.dateKey, group);
+  }
+
+  const groups = Array.from(groupsMap.values()).sort((a, b) =>
+    b.dateKey.localeCompare(a.dateKey),
+  );
+
+  return {
+    groups,
+    otherDocs: otherDocs.sort((a, b) => b.fileName.localeCompare(a.fileName)),
+  };
+}
+
+function format990Document(fileName: string): { year: number; isMain: boolean; label: string } | null {
+  const match = fileName.match(/^(\d{4})\s+990EZ(?:\s+schedule-([a-z]))?\.pdf$/i);
+  if (!match) return null;
+
+  const year = Number.parseInt(match[1] ?? "", 10);
+  const schedule = (match[2] ?? "").toUpperCase();
+  const isMain = !schedule;
+  const label = isMain ? `${year} Form 990-EZ` : `${year} Schedule ${schedule}`;
+
+  return { year, isMain, label };
+}
+
+function form990Documents() {
+  const files = listPdfFiles("files");
+  const docs = files
+    .map((fileName) => {
+      const parsed = format990Document(fileName);
+      if (!parsed) return null;
+      return {
+        fileName,
+        href: publicPdfHref("files", fileName),
+        label: parsed.label,
+        year: parsed.year,
+        isMain: parsed.isMain,
+      };
+    })
+    .filter((doc): doc is (DocumentLink & { year: number; isMain: boolean }) => Boolean(doc));
+
+  return docs
+    .sort((a, b) => b.year - a.year || Number(b.isMain) - Number(a.isMain) || a.label.localeCompare(b.label))
+    .map(({ fileName, href, label }) => ({ fileName, href, label }));
+}
+
+function insuranceDocuments(): DocumentLink[] {
+  const files = listPdfFiles("files").filter((fileName) =>
+    fileName.toLowerCase().startsWith("insurancepolicy"),
+  );
+
+  const docs = files.map((fileName) => {
+    const lower = fileName.toLowerCase();
+    const label =
+      lower === "insurancepolicy.pdf"
+        ? "Insurance Policy"
+        : lower.includes("pan eros")
+          ? "Insurance Policy (Pan Eros)"
+          : lower.includes("ammendment") || lower.includes("amendment")
+            ? "Insurance Policy Amendment"
+            : fileName.replace(/\.pdf$/i, "");
+
+    return {
+      fileName,
+      href: publicPdfHref("files", fileName),
+      label,
+    };
+  });
+
+  const priorityOrder = [
+    "Insurance Policy",
+    "Insurance Policy Amendment",
+    "Insurance Policy (Pan Eros)",
+  ];
+
+  return docs.sort((a, b) => {
+    const aIndex = priorityOrder.indexOf(a.label);
+    const bIndex = priorityOrder.indexOf(b.label);
+    const aRank = aIndex === -1 ? Number.POSITIVE_INFINITY : aIndex;
+    const bRank = bIndex === -1 ? Number.POSITIVE_INFINITY : bIndex;
+
+    return aRank - bRank || a.label.localeCompare(b.label);
+  });
+}
+
+const meetingData = buildMeetingGroups();
+const meetingGroups = meetingData.groups;
+const meetingOtherDocs = meetingData.otherDocs;
+const form990Docs = form990Documents();
+const insuranceDocs = insuranceDocuments();
+
+const lastUpdated = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  year: "numeric",
+}).format(new Date());
 ---
 
 <BaseLayout
@@ -12,110 +210,6 @@ import PageHeader from "@components/common/PageHeader.astro";
     <div class="container">
       <div class="row justify-center">
         <div class="lg:col-10">
-          <div
-            class="glass rounded-lg p-8 mb-8 intersect:animate-fade opacity-0"
-          >
-            <h2 class="h3 mb-6">Transparency & Documentation</h2>
-            <p class="mb-8 text-lg">
-              As a 501(c)(3) nonprofit organization, Undefined is committed to
-              complete transparency in our operations. Below you'll find all of
-              our official organizational documents, IRS filings, and governance
-              materials.
-            </p>
-
-            <div class="row">
-              <div class="md:col-12 mb-8">
-                <div class="glass-t rounded-lg p-6">
-                  <h3 class="h4 mb-4">📄 IRS Documents & Tax-Exempt Status</h3>
-
-                  <div class="mb-6">
-                    <h4 class="h5 mb-3">501(c)(3) Determination Letter</h4>
-                    <p class="mb-3">
-                      Our official tax-exempt status determination from the
-                      Internal Revenue Service.
-                    </p>
-                    <ul class="list-disc pl-6 mb-4">
-                      <li>
-                        <strong>Status:</strong> Tax-exempt under Internal
-                        Revenue Code Section 501(c)(3)
-                      </li>
-                      <li><strong>EIN:</strong> 33-3432965</li>
-                      <li><strong>Date:</strong> February 14, 2025</li>
-                    </ul>
-                    <a
-                      href="/documents/files/FinalLetter_33-3432965_UNDEFINED_02142025_00.pdf"
-                      target="_blank"
-                      class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
-                    >
-                      📄 View IRS Final Determination Letter
-                    </a>
-                  </div>
-
-                  <div class="mb-6">
-                    <h4 class="h5 mb-3">Form 1023-EZ Application</h4>
-                    <p class="mb-3">
-                      Our original application for tax-exempt status filed with
-                      the IRS.
-                    </p>
-                    <p class="mb-3 text-sm">
-                      <strong>Description:</strong> Application for Recognition
-                      of Exemption Under Section 501(c)(3)
-                    </p>
-                    <a
-                      href="/documents/files/1023-EZ_Submission.pdf"
-                      target="_blank"
-                      class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
-                    >
-                      📄 View 1023-EZ Submission
-                    </a>
-                  </div>
-
-                  <div class="mb-6">
-                    <h4 class="h5 mb-3">IRS Notices & State Documents</h4>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                      <div class="text-center">
-                        <a
-                          href="/documents/files/CP575Notice_1739495863893.pdf"
-                          target="_blank"
-                          class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
-                        >
-                          📄 IRS CP575 Notice
-                        </a>
-                      </div>
-                      <div class="text-center">
-                        <a
-                          href="/documents/files/0021692540_Certificate.pdf"
-                          target="_blank"
-                          class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
-                        >
-                          📄 WA State Certificate
-                        </a>
-                      </div>
-                      <div class="text-center">
-                        <a
-                          href="/documents/files/0021692540_OnlineReport.pdf"
-                          target="_blank"
-                          class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
-                        >
-                          📄 WA State Formation Document
-                        </a>
-                      </div>
-                      <div class="text-center">
-                        <a
-                          href="/documents/files/Resale Permit.pdf"
-                          target="_blank"
-                          class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
-                        >
-                          📄 WA Resale Permit
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div
             class="glass rounded-lg p-8 mb-8 intersect:animate-fadeUp opacity-0"
           >
@@ -169,13 +263,173 @@ import PageHeader from "@components/common/PageHeader.astro";
           </div>
 
           <div
+            class="glass rounded-lg p-8 mb-8 intersect:animate-fade opacity-0"
+          >
+            <h2 class="h3 mb-6">Transparency & Documentation</h2>
+            <p class="mb-8 text-lg">
+              As a 501(c)(3) nonprofit organization, Undefined is committed to
+              complete transparency in our operations. Below you'll find all of
+              our official organizational documents, IRS filings, and governance
+              materials.
+            </p>
+
+            <div class="row">
+              <div class="md:col-12 mb-8">
+                <div class="glass-t rounded-lg p-6">
+                  <h3 class="h4 mb-4">📄 IRS Documents & Tax-Exempt Status</h3>
+
+                  <div class="mb-6">
+                    <h4 class="h5 mb-3">501(c)(3) Determination Letter</h4>
+                    <p class="mb-3">
+                      Our official tax-exempt status determination from the
+                      Internal Revenue Service.
+                    </p>
+                    <ul class="list-disc pl-6 mb-4">
+                      <li>
+                        <strong>Status:</strong> Tax-exempt under Internal
+                        Revenue Code Section 501(c)(3)
+                      </li>
+                      <li><strong>EIN:</strong> 33-3432965</li>
+                      <li><strong>Date:</strong> February 14, 2025</li>
+                    </ul>
+                    <a
+                      href="/documents/files/FinalLetter_33-3432965_UNDEFINED_02142025_00.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+                    >
+                      📄 View IRS Final Determination Letter
+                    </a>
+                  </div>
+
+                  <div class="mb-6">
+                    <h4 class="h5 mb-3">Form 1023-EZ Application</h4>
+                    <p class="mb-3">
+                      Our original application for tax-exempt status filed with
+                      the IRS.
+                    </p>
+                    <p class="mb-3 text-sm">
+                      <strong>Description:</strong> Application for Recognition
+                      of Exemption Under Section 501(c)(3)
+                    </p>
+                    <a
+                      href="/documents/files/1023-EZ_Submission.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+                    >
+                      📄 View 1023-EZ Submission
+                    </a>
+                  </div>
+
+                  <div class="mb-6">
+                    <h4 class="h5 mb-3">IRS Notices & State Documents</h4>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                      <div class="text-center">
+                        <a
+                          href="/documents/files/CP575Notice_1739495863893.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
+                        >
+                          📄 IRS CP575 Notice
+                        </a>
+                      </div>
+                      <div class="text-center">
+                        <a
+                          href="/documents/files/0021692540_Certificate.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
+                        >
+                          📄 WA State Certificate
+                        </a>
+                      </div>
+                      <div class="text-center">
+                        <a
+                          href="/documents/files/0021692540_OnlineReport.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
+                        >
+                          📄 WA State Formation Document
+                        </a>
+                      </div>
+                      <div class="text-center">
+                        <a
+                          href="/documents/files/Resale%20Permit.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
+                        >
+                          📄 WA Resale Permit
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  {
+                    form990Docs.length > 0 && (
+                      <div class="mb-6">
+                        <h4 class="h5 mb-3">Form 990-EZ & Schedules</h4>
+                        <p class="mb-3">
+                          Our IRS Form 990-EZ filing and supporting schedules.
+                        </p>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                          {form990Docs.map((doc) => (
+                            <div class="text-center">
+                              <a
+                                href={doc.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-block px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors"
+                              >
+                                📄 {doc.label}
+                              </a>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )
+                  }
+
+                  {
+                    insuranceDocs.length > 0 && (
+                      <div class="mb-2">
+                        <h4 class="h5 mb-3">Insurance</h4>
+                        <p class="mb-3">
+                          Insurance policy documentation and amendments.
+                        </p>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                          {insuranceDocs.map((doc) => (
+                            <div class="text-center">
+                              <a
+                                href={doc.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-block px-4 py-2 bg-amber-600 text-white rounded hover:bg-amber-700 transition-colors"
+                              >
+                                📄 {doc.label}
+                              </a>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
             class="glass rounded-lg p-8 mb-8 intersect:animate-fadeUp opacity-0"
           >
             <h2 class="h3 mb-6">📢 Marketing Materials</h2>
             <p class="mb-6 text-lg">
-              Download our logo and marketing materials for community use, event
-              promotion, and partnerships. These assets are available for
-              community partners, collaborators, and media use.
+              Download our logo, letterhead, and marketing materials for
+              community use, event promotion, and partnerships. These assets are
+              available for community partners, collaborators, and media use.
             </p>
 
             <div class="row">
@@ -202,6 +456,7 @@ import PageHeader from "@components/common/PageHeader.astro";
                       <a
                         href="/documents/logo.svg"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm"
                       >
                         Download
@@ -221,6 +476,7 @@ import PageHeader from "@components/common/PageHeader.astro";
                       <a
                         href="/documents/logo.png"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm"
                       >
                         Download
@@ -240,6 +496,7 @@ import PageHeader from "@components/common/PageHeader.astro";
                       <a
                         href="/documents/logo.ai"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm"
                       >
                         Download
@@ -259,6 +516,27 @@ import PageHeader from "@components/common/PageHeader.astro";
                       <a
                         href="/documents/logo.psd"
                         target="_blank"
+                        rel="noopener noreferrer"
+                        class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm"
+                      >
+                        Download
+                      </a>
+                    </div>
+
+                    <div
+                      class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800 rounded"
+                    >
+                      <div>
+                        <strong>Letterhead Template (.dotx)</strong>
+                        <br />
+                        <span class="text-sm text-gray-600 dark:text-gray-400"
+                          >Microsoft Word template for official correspondence</span
+                        >
+                      </div>
+                      <a
+                        href="/documents/files/letterhead.dotx"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm"
                       >
                         Download
@@ -304,6 +582,7 @@ import PageHeader from "@components/common/PageHeader.astro";
               <a
                 href="/documents/README.md"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
               >
                 📄 View Complete Usage Guidelines
@@ -313,13 +592,93 @@ import PageHeader from "@components/common/PageHeader.astro";
 
           <div class="glass rounded-lg p-8 intersect:animate-fadeUp opacity-0">
             <h2 class="h3 mb-6">Governance Documents</h2>
-            <p class="mb-4">
-              <em
-                >Additional governance documents such as bylaws, board meeting
-                minutes, and annual reports will be posted here as they become
-                available.</em
-              >
+            <p class="mb-6">
+              Board meeting materials are posted here for public reference.
             </p>
+
+            <h3 class="h4 mb-4">🗓️ Meeting Agendas & Minutes</h3>
+            {
+              meetingGroups.length > 0 ? (
+                <div class="space-y-4 mb-8">
+                  {meetingGroups.map((group) => (
+                    <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded">
+                      <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                        <div>
+                          <strong>{group.formattedDate}</strong>
+                          <br />
+                          <span class="text-sm text-gray-600 dark:text-gray-400">
+                            Board meeting materials
+                          </span>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                          {group.agenda ? (
+                            <a
+                              href={group.agenda.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm"
+                            >
+                              {group.agenda.label}
+                            </a>
+                          ) : (
+                            <span class="text-sm text-gray-600 dark:text-gray-400">
+                              Agenda pending
+                            </span>
+                          )}
+                          {group.minutes ? (
+                            <a
+                              href={group.minutes.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="px-3 py-2 bg-emerald-600 text-white rounded hover:bg-emerald-700 transition-colors text-sm"
+                            >
+                              {group.minutes.label}
+                            </a>
+                          ) : (
+                            <span class="text-sm text-gray-600 dark:text-gray-400">
+                              Minutes pending
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p class="mb-8 text-sm text-gray-600 dark:text-gray-400">
+                  <em>No meeting agendas or minutes have been posted yet.</em>
+                </p>
+              )
+            }
+
+            {
+              meetingOtherDocs.length > 0 && (
+                <div class="mb-8">
+                  <h4 class="h5 mb-3">Other Meeting Documents</h4>
+                  <div class="space-y-2">
+                    {meetingOtherDocs.map((doc) => (
+                      <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800 rounded">
+                        <div>
+                          <strong>{doc.label}</strong>
+                          <br />
+                          <span class="text-sm text-gray-600 dark:text-gray-400">
+                            {doc.fileName}
+                          </span>
+                        </div>
+                        <a
+                          href={doc.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm"
+                        >
+                          View PDF
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )
+            }
 
             <h3 class="h4 mb-4">Questions or Requests</h3>
             <p class="mb-6">
@@ -346,7 +705,7 @@ import PageHeader from "@components/common/PageHeader.astro";
             <p class="text-sm text-txt-s dark:text-darkmode-txt-s text-center">
               <em
                 >This page is updated regularly to ensure all current documents
-                are available to the public. Last updated: June 2025</em
+                are available to the public. Last updated: {lastUpdated}</em
               >
             </p>
           </div>
