@@ -69,7 +69,8 @@ Photography, video, and audio recording at Undefined events are governed by the 
 - You may decline consent at check-in and may withdraw consent at any time—before, during, or after the event—without explanation or penalty, by requesting an opt-out wristband, telling staff, or emailing [contact@undefined.charity](mailto:contact@undefined.charity).
 - Attendees who decline or revoke consent receive a visible opt-out wristband; our photographer is directed to avoid, blur, or exclude wristband-wearers whenever possible.
 - Drones and unmanned aircraft are prohibited at Undefined events.
-- Before event photos are published, attendees are offered the opportunity to review images in which they appear. Any photo a person asks us to remove is deleted from the publication set preemptively.
+- After every event we contact checked-in attendees and post a notice in our private Telegram communities, opening a review window of **at least 48 hours** before any photos are published. Nothing is posted to social media, the website, or marketing during that window, and any photo an identifiable person asks us to remove or modify is deleted or edited from the publication set preemptively.
+- Beyond the review window, you may still request removal or modification of any photo at any time—there is no deadline.
 
 Review the Terms & Conditions before each event for the full procedures and your rights.
 

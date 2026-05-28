@@ -53,7 +53,13 @@ Attending an Undefined event requires that you agree to these Terms & Conditions
 
 **Post-Event Photo Review**
 
-Before any event photos are published or otherwise shared beyond internal review, attendees will be offered the opportunity to review the photos in which they appear. Any photo that an identifiable person asks us to remove will be deleted from our publication set preemptively, before it is posted to social media, marketing, or community archives. Revocation requests received after publication will be honored as quickly as possible per the Photo Removal Requests process below.
+After every event we run a review window before any photos are published or otherwise shared beyond internal review:
+
+- We contact checked-in attendees (using the contact details on their registration) and post a review notice in our private Telegram communities.
+- Attendees have a **minimum of 48 hours** from the time the review is opened to view the photos in which they appear and ask us to remove or modify any of them. We may extend this window, but it will never be shorter than 48 hours.
+- During the review window, nothing is posted to social media, the website, marketing materials, or any other public channel.
+- Any photo an identifiable person asks us to remove or modify during the review window is deleted or edited from the publication set **preemptively**, before anything goes public.
+- Beyond the review window, you may still request removal or modification of any photo at any time—there is no deadline. Once published photos are subject to the Photo Removal Requests process below; we will remove or modify the image promptly upon request.
 
 **Group Photos and Marketing Imagery**
 
