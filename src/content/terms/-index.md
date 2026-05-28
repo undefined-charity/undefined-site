@@ -76,9 +76,9 @@ Drones, unmanned aircraft, and any other aerial recording devices are prohibited
 - Organizers may direct you to stop recording or to delete media that violates these rules, jeopardizes participant safety, or contravenes venue policy.
 - Personal recordings must honor every opt-out wristband, every venue restriction, and all applicable laws.
 
-**Exception for Documenting Violations**
+**Reporting Violations**
 
-Photos or video taken solely to document rule violations, policy violations, or criminal activity are not governed by the consent rules above. Such media must be turned over to the Undefined board (or, at TRC, also to the camp's Executive Committee) and may not be posted to social media or shared publicly by the person who captured it.
+Do not attempt to document consent, safety, or rule violations yourself. At Undefined events—at TRC or any other venue—if you witness or experience a consent, safety, or rule violation, report it immediately to a monitor, organizer, or staff member. They will take any necessary steps, including documentation, intervention, escalation to the board, and coordination with the venue (at TRC, the Executive Committee) or with law enforcement where appropriate. The prohibitions on recording in private personal spaces and the consent rules above apply at all times and have no "documenting a violation" exception for attendees.
 
 ### Consent is Critical
 
