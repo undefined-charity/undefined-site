@@ -25,9 +25,19 @@ Recording of any kind (still photos, video, audio, livestream, or drone footage)
 
 This prohibition applies to attendees, staff, volunteers, vendors, and event photographers alike, with no exceptions.
 
-**Consent at Check-In**
+**Consent at Check-In — What You Are Agreeing To**
 
-When you check in to an Undefined event, you will be asked to give—or decline—explicit, informed, and revocable consent for our event photographer to capture your image in general event spaces. Your decision is recorded with your registration. You may change your decision at any time, for any reason, without explanation or penalty.
+Attending an Undefined event requires that you agree to these Terms & Conditions, including this Privacy & Photography section. By accepting these Terms at registration or check-in, you are providing the **written consent** required by TRC Section 4 (and any equivalent venue policy) for identifiable images of you to be captured, retained, and—subject to the Post-Event Photo Review process below—published. You must accept these Terms to attend.
+
+**What "private event spaces" means.** Undefined events frequently include adult, kink, or otherwise intimate programming. You are explicitly informed and acknowledge that **anywhere within Undefined's private event spaces—including dance floors, play areas, social areas, performance areas, and any other space we have reserved or programmed—may be photographed or recorded by our event photographer**, and that the imagery may include intimate, partially clothed, nude, or sexually explicit content depending on the nature of the event. This consent does **not** extend to "private personal spaces," which are never recorded: bathrooms, showers, locker rooms, changing areas, medical/harm-reduction spaces, sleeping areas, lodging, or any other space designated private by staff or the venue (see "Spaces Where Photography Is Never Permitted" above).
+
+**Your consent is explicit, informed, and revocable.**
+
+- At check-in you may **decline** event-photographer consent. You may also **withdraw** it at any time—before, during, or after the event—by requesting an opt-out wristband, telling any staff member or the info/registration table, or emailing [contact@undefined.charity](mailto:contact@undefined.charity). No explanation is required and there is no penalty.
+- Withdrawing consent applies going forward from the moment you communicate it, and also entitles you to ask us to delete any already-captured images of you under the Post-Event Photo Review and Photo Removal Requests processes below.
+- If you decline consent and do not wish to wear an opt-out wristband or be present in photographable spaces, please speak with staff at check-in so we can discuss your options. We cannot guarantee a photo-free experience for someone who remains in active event spaces without a visible opt-out indicator.
+
+**Why we ask in writing.** TRC Section 4 (Parts A and B) and Washington's RCW 9A.44.115 require permission—and, for identifiable images posted publicly, *written* consent—before a person's image is recorded or shared. Tying that consent to acceptance of these Terms at registration/check-in creates the written record both standards require, while still leaving you free to revoke it at any time.
 
 **Opt-Out Wristbands**
 
