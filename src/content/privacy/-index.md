@@ -61,7 +61,16 @@ If you create an account with us, we retain your personal data until you close i
 
 ## Event-Specific Privacy Practices
 
-We publish photography opt-out procedures, safety expectations, and other event-specific notices in our Community Event Guidelines within the Terms & Conditions. Review those guidelines before each event to understand how on-site privacy requests are handled.
+Photography, video, and audio recording at Undefined events are governed by the Privacy & Photography section of our [Terms & Conditions](/terms). In summary:
+
+- We apply the most restrictive standard among Undefined policy, venue policy, and applicable law (including Washington's RCW 9A.44.115). At venues with their own privacy rules—such as The Rocks Camp (TRC), whose Section 4 governs photography on camp property—the venue policy is honored in addition to ours.
+- Recording is never permitted in bathrooms, changing areas, medical or harm-reduction spaces, sleeping areas, or any other location designated private by staff or the venue.
+- At check-in, attendees are asked to give or decline explicit, informed, and revocable consent for our event photographer to capture their image in general event spaces. Consent decisions are recorded and may be changed at any time.
+- Attendees who decline or revoke consent receive a visible opt-out wristband; our photographer is directed to avoid, blur, or exclude wristband-wearers whenever possible.
+- Drones and unmanned aircraft are prohibited at Undefined events.
+- Before event photos are published, attendees are offered the opportunity to review images in which they appear. Any photo a person asks us to remove is deleted from the publication set preemptively.
+
+Review the Terms & Conditions before each event for the full procedures and your rights.
 
 ## Policy Updates
 
@@ -73,4 +82,4 @@ This policy is governed by the laws of the State of Washington and the United St
 
 ---
 
-_Last updated: December 7, 2025_
+_Last updated: May 28, 2026_
