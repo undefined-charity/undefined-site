@@ -63,7 +63,7 @@ After every event we run a review window before any photos are published or othe
 
 **Group Photos and Marketing Imagery**
 
-Large group photos used for marketing will be selected, cropped, or treated so they are free of clear facial identification unless we hold written consent from each identifiable person, consistent with TRC's Section 4 Part B. Posting any identifiable photo on social media requires the documented consent of each identifiable person in the image.
+Large group photos used for marketing will be selected, cropped, or treated so they are free of clear facial identification unless we hold written consent from each identifiable person, consistent with TRC's Section 4 Part B. Posting any identifiable photo on social media requires written consent from each identifiable person in the image.
 
 **Drones and Unmanned Aircraft**
 
@@ -71,7 +71,7 @@ Drones, unmanned aircraft, and any other aerial recording devices are prohibited
 
 **Personal Recording & Streaming by Attendees**
 
-- Do not record audio, take photos, video, or livestream any identifiable person without their explicit, contemporaneous consent—even in general event spaces. The event-photographer consent given at check-in covers only Undefined's official photographer, not other attendees.
+- Do not record audio, take photos, video, or livestream any identifiable person without their explicit consent given at the time of recording—even in private event spaces. The event-photographer consent given by accepting these Terms covers only Undefined's official photographer, not other attendees.
 - Recording in any prohibited space listed above is never permitted, regardless of consent.
 - Organizers may direct you to stop recording or to delete media that violates these rules, jeopardizes participant safety, or contravenes venue policy.
 - Personal recordings must honor every opt-out wristband, every venue restriction, and all applicable laws.
