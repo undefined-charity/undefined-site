@@ -78,7 +78,9 @@ Drones, unmanned aircraft, and any other aerial recording devices are prohibited
 
 **Reporting Violations**
 
-Do not attempt to document consent, safety, or rule violations yourself. At Undefined events—at TRC or any other venue—if you witness or experience a consent, safety, or rule violation, report it immediately to a monitor, organizer, or staff member. They will take any necessary steps, including documentation, intervention, escalation to the board, and coordination with the venue (at TRC, the Executive Committee) or with law enforcement where appropriate. The prohibitions on recording in private personal spaces and the consent rules above apply at all times and have no "documenting a violation" exception for attendees.
+Undefined has a **zero tolerance policy** for consent, safety, and rule violations. If you witness or experience a violation, report it immediately to a monitor, organizer, or staff member. Staff will take immediate action—including intervention, escalation to the board, coordination with the venue or with law enforcement where appropriate—and will document the incident as required.
+
+Do not attempt to document or capture violations yourself. We do not want attendees putting themselves at risk by photographing or recording what may be illegal or non-consented imagery. The prohibitions on recording in private personal spaces and the consent rules above apply at all times and have no "documenting a violation" exception for attendees.
 
 ### Consent is Critical
 
