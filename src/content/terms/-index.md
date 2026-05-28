@@ -61,10 +61,6 @@ After every event we run a review window before any photos are published or othe
 - Any photo an identifiable person asks us to remove or modify during the review window is deleted or edited from the publication set **preemptively**, before anything goes public.
 - Beyond the review window, you may still request removal or modification of any photo at any time—there is no deadline. Once published photos are subject to the Photo Removal Requests process below; we will remove or modify the image promptly upon request.
 
-**Group Photos and Marketing Imagery**
-
-Large group photos used for marketing will be selected, cropped, or treated so they are free of clear facial identification unless we hold written consent from each identifiable person. Posting any identifiable photo on social media requires written consent from each identifiable person in the image.
-
 **Drones and Unmanned Aircraft**
 
 Drones, unmanned aircraft, and any other aerial recording devices are prohibited at Undefined events. Where a venue imposes additional drone restrictions, those rules apply as well; Undefined will not authorize or coordinate drone use on venue property.
