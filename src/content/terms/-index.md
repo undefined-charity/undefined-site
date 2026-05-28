@@ -11,7 +11,7 @@ When you participate in Undefined events, you have rights and responsibilities t
 
 ### Privacy & Photography
 
-Undefined applies the **most restrictive** photography and privacy standard at every event. Where a venue policy, applicable law (including Washington's RCW 9A.44.115 on voyeurism), or this policy differ, the strictest rule controls. At venues with their own privacy rules—such as The Rocks Camp (TRC), whose Section 4 (Photography and Video Recording by Members and Guests) governs all activity on camp property—the venue policy always applies in addition to the rules below.
+Undefined applies the **most restrictive** photography and privacy standard at every event. Where this policy, a venue's own rules, or applicable law (including Washington's RCW 9A.44.115 on voyeurism) differ, the strictest rule controls. When a venue has its own photography or privacy policy, that policy applies in addition to the rules below.
 
 **Spaces Where Photography Is Never Permitted**
 
@@ -27,17 +27,17 @@ This prohibition applies to attendees, staff, volunteers, vendors, and event pho
 
 **Consent at Check-In — What You Are Agreeing To**
 
-Attending an Undefined event requires that you agree to these Terms & Conditions, including this Privacy & Photography section. By accepting these Terms at registration or check-in, you are providing the **written consent** required by TRC Section 4 (and any equivalent venue policy) for identifiable images of you to be captured, retained, and—subject to the Post-Event Photo Review process below—published. You must accept these Terms to attend.
+Attending an Undefined event requires that you agree to these Terms & Conditions, including this Privacy & Photography section. By accepting these Terms at registration or check-in, you are providing the **written consent** required by law and by any applicable venue policy for identifiable images of you to be captured, retained, and—subject to the Post-Event Photo Review process below—published. You must accept these Terms to attend.
 
 **What "private event spaces" means.** Undefined events frequently include adult, kink, or otherwise intimate programming. You are explicitly informed and acknowledge that **anywhere within Undefined's private event spaces—including dance floors, play areas, social areas, performance areas, and any other space we have reserved or programmed—may be photographed or recorded by our event photographer**, and that the imagery may include intimate, partially clothed, nude, or sexually explicit content depending on the nature of the event. This consent does **not** extend to "private personal spaces," which are never recorded: bathrooms, showers, locker rooms, changing areas, medical/harm-reduction spaces, sleeping areas, lodging, or any other space designated private by staff or the venue (see "Spaces Where Photography Is Never Permitted" above).
+
+**Why we ask in writing.** Washington's RCW 9A.44.115—and many venue policies—require permission, and for identifiable images posted publicly *written* consent, before a person's image is recorded or shared. Tying that consent to acceptance of these Terms at registration/check-in creates the written record those standards require, while still leaving you free to revoke it at any time.
 
 **Your consent is explicit, informed, and revocable.**
 
 - At check-in you may **decline** event-photographer consent. You may also **withdraw** it at any time—before, during, or after the event—by requesting an opt-out wristband, telling any staff member or the info/registration table, or emailing [contact@undefined.charity](mailto:contact@undefined.charity). No explanation is required and there is no penalty.
 - Withdrawing consent applies going forward from the moment you communicate it, and also entitles you to ask us to delete any already-captured images of you under the Post-Event Photo Review and Photo Removal Requests processes below.
 - If you decline consent and do not wish to wear an opt-out wristband or be present in photographable spaces, please speak with staff at check-in so we can discuss your options. We cannot guarantee a photo-free experience for someone who remains in active event spaces without a visible opt-out indicator.
-
-**Why we ask in writing.** TRC Section 4 (Parts A and B) and Washington's RCW 9A.44.115 require permission—and, for identifiable images posted publicly, *written* consent—before a person's image is recorded or shared. Tying that consent to acceptance of these Terms at registration/check-in creates the written record both standards require, while still leaving you free to revoke it at any time.
 
 **Opt-Out Wristbands**
 
@@ -63,11 +63,11 @@ After every event we run a review window before any photos are published or othe
 
 **Group Photos and Marketing Imagery**
 
-Large group photos used for marketing will be selected, cropped, or treated so they are free of clear facial identification unless we hold written consent from each identifiable person, consistent with TRC's Section 4 Part B. Posting any identifiable photo on social media requires written consent from each identifiable person in the image.
+Large group photos used for marketing will be selected, cropped, or treated so they are free of clear facial identification unless we hold written consent from each identifiable person. Posting any identifiable photo on social media requires written consent from each identifiable person in the image.
 
 **Drones and Unmanned Aircraft**
 
-Drones, unmanned aircraft, and any other aerial recording devices are prohibited at Undefined events. At TRC, drones are additionally prohibited per camp policy and may only be operated with explicit written permission from TRC's VP of Operations; Undefined will not authorize or coordinate drone use on camp property.
+Drones, unmanned aircraft, and any other aerial recording devices are prohibited at Undefined events. Where a venue imposes additional drone restrictions, those rules apply as well; Undefined will not authorize or coordinate drone use on venue property.
 
 **Personal Recording & Streaming by Attendees**
 
@@ -111,7 +111,7 @@ Consent must be explicit, informed, and freely given every single time. It canno
 
 **Food Safety & Wildlife Precautions**:
 
-- Some venues (like TRC) have specific food handling and safety instructions that must always be followed
+- Some venues have specific food handling and safety instructions that must always be followed
 - Properly store and dispose of all food and scented items according to venue requirements
 - Follow all wildlife safety protocols, including bear safety measures where applicable
 
