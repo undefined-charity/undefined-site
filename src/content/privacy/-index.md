@@ -17,13 +17,17 @@ We collect, process, store, and use personal data when you book tickets or purch
 
 All personal data you provide must be true, complete, and accurate. If you supply false information and we suspect fraud, we will record it and may refuse service.
 
+## Data Collected at Check-In and Consent
+
+When you accept our Terms & Conditions electronically—whether during ticket purchase, at event check-in, or through any other acceptance flow we provide—we may collect your name, email address, photography preference, and electronic signature. This data is transmitted to our event-operations systems for attendance verification, consent record-keeping, and communication purposes, and is retained per our Data Retention policy below.
+
 ## Data We Automatically Collect
 
 When you visit our event ticket shop, we (and service providers acting on our behalf) automatically log device and usage data such as device identifiers, browser and operating system details, language, time zone, and anonymized statistics about browsing actions. We capture this information through cookies in line with the Cookie section of this policy and use it to improve our services, analyze trends, and secure our systems.
 
 ## Marketing Communications
 
-If you opt in to receive updates, you consent to us processing your data to send newsletters, surveys, campaign information, or invitations to new events. We store a record of your consent. You may withdraw at any time by emailing [contact@undefined.charity](mailto:contact@undefined.charity) or clicking unsubscribe in an email. Please allow up to five business days for changes to take effect.
+When you purchase a ticket, check in to an event, or otherwise provide your email address during a transaction with Undefined, we may use that email to send you information about future similar events, newsletters, surveys, or campaign updates. We store a record of the basis for each communication. You may unsubscribe at any time by clicking the unsubscribe link in any email or by emailing [contact@undefined.charity](mailto:contact@undefined.charity). Please allow up to five business days for changes to take effect. Unsubscribing from marketing emails does not affect transactional messages related to tickets you have already purchased or events you are registered for.
 
 ## Lawful Processing of Your Personal Data
 
@@ -32,6 +36,8 @@ We process your personal data to fulfill contractual obligations (e.g., deliveri
 ## Who We Share Your Data With
 
 We may share personal data with vetted service providers that perform functions on our behalf, including payment processors, event ticketing vendors, email and IT providers, accountants, auditors, and legal counsel. They act under our instructions and must provide appropriate safeguards. We may also disclose data when required by law or to protect a third party's rights, property, or safety.
+
+**We do not sell, rent, or trade your personal information to third parties—ever.** Your data is used solely to operate our programs, communicate with you, and fulfill our nonprofit mission.
 
 ## Where We Hold and Process Your Personal Data
 
@@ -84,4 +90,4 @@ This policy is governed by the laws of the State of Washington and the United St
 
 ---
 
-_Last updated: May 28, 2026_
+_Last updated: June 1, 2026_

@@ -9,6 +9,14 @@ description: Community guidelines, participation terms, and legal notices for Un
 
 When you participate in Undefined events, you have rights and responsibilities that keep our community safe, welcoming, and fun for everyone. For details about how we handle personal information, please review our [Privacy Policy](/privacy).
 
+### Age Requirements
+
+Certain Undefined events are restricted to attendees aged 21 and over. Age restrictions are stated on event listings and enforced at the door with valid government-issued photo ID—no exceptions. Misrepresenting your age to gain entry may result in immediate removal and a permanent ban.
+
+### Electronic Acceptance of Terms
+
+By purchasing a ticket, completing check-in, or accepting these Terms through any electronic means we provide (including signature capture), you agree to be bound by these Terms & Conditions and our [Privacy Policy](/privacy). Electronic acceptance carries the same legal weight as a handwritten signature.
+
 ### Privacy & Photography
 
 Undefined applies the **most restrictive** photography and privacy standard at every event. Where this policy, a venue's own rules, or applicable law (including Washington's RCW 9A.44.115 on voyeurism) differ, the strictest rule controls. When a venue has its own photography or privacy policy, that policy applies in addition to the rules below.
@@ -88,7 +96,11 @@ Consent must be explicit, informed, and freely given every single time. It canno
 - Intimate contact of any kind
 - Any activity involving bodily contact or physical assist
 
-**Ask every time** – if you have not clearly heard “yes,” you do not have consent. **No means no** and “stop,” “not now,” or any expression of hesitation must be honored immediately. Pressuring someone, following them, or attempting to wear them down is unacceptable and will result in removal from the event.
+**Ask every time** – if you have not clearly heard "yes," you do not have consent. **No means no** and "stop," "not now," any safe word, or any expression of hesitation must be honored immediately. Pressuring someone, following them, or attempting to wear them down is unacceptable and will result in removal from the event.
+
+**Intoxication does not equal consent.** A person who is intoxicated, impaired, or incapacitated cannot give valid consent. Do not engage in intimate or physical interactions with anyone whose ability to consent is in question. If you are intoxicated to the point of being unable to maintain safe behavior, you may be asked to leave.
+
+**Staff and monitors have final authority.** Dungeon monitors, event staff, and organizers may intervene at any time. Their decisions regarding consent, safety, and conduct are final and must be respected without argument.
 
 ### Venue Care & Respect
 
@@ -261,4 +273,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ---
 
-_Last updated: May 28, 2026_
+_Last updated: June 1, 2026_
