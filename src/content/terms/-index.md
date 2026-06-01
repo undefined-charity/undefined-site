@@ -9,30 +9,82 @@ description: Community guidelines, participation terms, and legal notices for Un
 
 When you participate in Undefined events, you have rights and responsibilities that keep our community safe, welcoming, and fun for everyone. For details about how we handle personal information, please review our [Privacy Policy](/privacy).
 
+### Age Requirements
+
+Certain Undefined events are restricted to attendees aged 21 and over. Age restrictions are stated on event listings and enforced at the door with valid government-issued photo ID—no exceptions. Misrepresenting your age to gain entry may result in immediate removal and a permanent ban.
+
+### Electronic Acceptance of Terms
+
+By purchasing a ticket, completing check-in, or accepting these Terms through any electronic means we provide (including signature capture), you agree to be bound by these Terms & Conditions and our [Privacy Policy](/privacy). Electronic acceptance carries the same legal weight as a handwritten signature.
+
 ### Privacy & Photography
 
-**Public Areas**: Standard venue privacy policies apply in all public areas and spaces not exclusively reserved for our events.
+Undefined applies the **most restrictive** photography and privacy standard at every event. Where this policy, a venue's own rules, or applicable law (including Washington's RCW 9A.44.115 on voyeurism) differ, the strictest rule controls. When a venue has its own photography or privacy policy, that policy applies in addition to the rules below.
 
-**Private Events**: We take photos and videos at our private events for use on social media, marketing, and community documentation.
+**Spaces Where Photography Is Never Permitted**
 
-**Your Right to Opt-Out**: You have the right to opt-out of photography at any time:
+Recording of any kind (still photos, video, audio, livestream, or drone footage) is strictly prohibited in:
 
-- Request an opt-out wristband when you enter any event
-- Visit the info/registration table anytime during the event to request one
-- Anyone wearing an opt-out wristband will be avoided, blurred, or excluded from photos whenever possible
+- Bathrooms, showers, locker rooms, and changing areas
+- Medical, first-aid, or harm-reduction spaces
+- Sleeping areas, tents, cabins, dorms, and any lodging
+- Any other area designated private by event staff or the host venue
+- Any location or situation covered by RCW 9A.44.115 or comparable laws protecting against intimate or non-consensual recording
 
-**Important Notes**:
+This prohibition applies to attendees, staff, volunteers, vendors, and event photographers alike, with no exceptions.
 
-- This may not be possible for large group photos or if we can't see your wristband
-- Other attendees or members of the public may take photos, which we cannot control
-- Do not join group photos with the expectation that you will be blurred out - opt-out wristbands work best for candid shots and smaller groups
-- If you see a photo of yourself that you wish to have removed, contact us immediately and we will take it down
+**Consent at Check-In — What You Are Agreeing To**
 
-**Personal Recording & Streaming**:
+Attending an Undefined event requires that you agree to these Terms & Conditions, including this Privacy & Photography section. By accepting these Terms at registration or check-in, you are providing the **written consent** required by law and by any applicable venue policy for identifiable images of you to be captured, retained, and—subject to the Post-Event Photo Review process below—published. You must accept these Terms to attend.
 
-- Do not record audio, take video, or livestream anyone without explicit consent from every identifiable person.
-- Organizers may direct you to stop recording or to delete media that violates these rules or jeopardizes participant safety.
-- Media captured for personal use must still honor opt-out wristbands and any private-space restrictions explained by staff.
+**What "private event spaces" means.** Undefined events frequently include adult, kink, or otherwise intimate programming. You are explicitly informed and acknowledge that **anywhere within Undefined's private event spaces—including dance floors, play areas, social areas, performance areas, and any other space we have reserved or programmed—may be photographed or recorded by our event photographer**, and that the imagery may include intimate, partially clothed, nude, or sexually explicit content depending on the nature of the event. This consent does **not** extend to "private personal spaces," which are never recorded: bathrooms, showers, locker rooms, changing areas, medical/harm-reduction spaces, sleeping areas, lodging, or any other space designated private by staff or the venue (see "Spaces Where Photography Is Never Permitted" above).
+
+**Why we ask in writing.** Washington's RCW 9A.44.115—and many venue policies—require permission, and for identifiable images posted publicly *written* consent, before a person's image is recorded or shared. Tying that consent to acceptance of these Terms at registration/check-in creates the written record those standards require, while still leaving you free to revoke it at any time.
+
+**Your consent is explicit, informed, and revocable.**
+
+- At check-in you may **decline** event-photographer consent. You may also **withdraw** it at any time—before, during, or after the event—by requesting an opt-out wristband, telling any staff member or the info/registration table, or emailing [contact@undefined.charity](mailto:contact@undefined.charity). No explanation is required and there is no penalty.
+- Withdrawing consent applies going forward from the moment you communicate it, and also entitles you to ask us to delete any already-captured images of you under the Post-Event Photo Review and Photo Removal Requests processes below.
+- If you decline consent and do not wish to wear an opt-out wristband or be present in photographable spaces, please speak with staff at check-in so we can discuss your options. We cannot guarantee a photo-free experience for someone who remains in active event spaces without a visible opt-out indicator.
+
+**Opt-Out Wristbands**
+
+- Attendees who decline or revoke photo consent will receive a clearly visible (red) opt-out wristband at check-in or any time during the event from the info/registration table.
+- Anyone wearing an opt-out wristband will be avoided, blurred, or excluded from photos whenever possible, and our event photographer is directed to honor the wristband at all times.
+- You can request a wristband mid-event; from that point forward your opt-out applies to all future photos.
+
+**Important Limits of Opt-Out**
+
+- Wristbands work best for candid shots and small groups. They may not be visible in large group photos, low-light conditions, or fast-moving scenes—please do not join group photos with the expectation of being blurred out.
+- Other attendees or members of the public may take photos in areas we do not control; we cannot make guarantees about media captured by third parties.
+- If you see a photo of yourself that you wish to have removed, contact us immediately and we will take it down.
+
+**Post-Event Photo Review**
+
+After every event we run a review window before any photos are published or otherwise shared beyond internal review:
+
+- We contact checked-in attendees (using the contact details on their registration) and post a review notice in our private Telegram communities.
+- Attendees have a **minimum of 48 hours** from the time the review is opened to view the photos in which they appear and ask us to remove or modify any of them. We may extend this window, but it will never be shorter than 48 hours.
+- During the review window, nothing is posted to social media, the website, marketing materials, or any other public channel.
+- Any photo an identifiable person asks us to remove or modify during the review window is deleted or edited from the publication set **preemptively**, before anything goes public.
+- Beyond the review window, you may still request removal or modification of any photo at any time—there is no deadline. Once published photos are subject to the Photo Removal Requests process below; we will remove or modify the image promptly upon request.
+
+**Drones and Unmanned Aircraft**
+
+Drones, unmanned aircraft, and any other aerial recording devices are prohibited at Undefined events. Where a venue imposes additional drone restrictions, those rules apply as well; Undefined will not authorize or coordinate drone use on venue property.
+
+**Personal Recording & Streaming by Attendees**
+
+- Do not record audio, take photos, video, or livestream any identifiable person without their explicit consent given at the time of recording—even in private event spaces. The event-photographer consent given by accepting these Terms covers only Undefined's official photographer, not other attendees.
+- Recording in any prohibited space listed above is never permitted, regardless of consent.
+- Organizers may direct you to stop recording or to delete media that violates these rules, jeopardizes participant safety, or contravenes venue policy.
+- Personal recordings must honor every opt-out wristband, every venue restriction, and all applicable laws.
+
+**Reporting Violations**
+
+Undefined has a **zero tolerance policy** for consent, safety, and rule violations. If you witness or experience a violation, report it immediately to a monitor, organizer, or staff member. Staff will take immediate action—including intervention, escalation to the board, coordination with the venue or with law enforcement where appropriate—and will document the incident as required.
+
+Do not attempt to document or capture violations yourself. We do not want attendees putting themselves at risk by photographing or recording what may be illegal or non-consented imagery. The prohibitions on recording in private personal spaces and the consent rules above apply at all times and have no "documenting a violation" exception for attendees.
 
 ### Consent is Critical
 
@@ -44,7 +96,11 @@ Consent must be explicit, informed, and freely given every single time. It canno
 - Intimate contact of any kind
 - Any activity involving bodily contact or physical assist
 
-**Ask every time** – if you have not clearly heard “yes,” you do not have consent. **No means no** and “stop,” “not now,” or any expression of hesitation must be honored immediately. Pressuring someone, following them, or attempting to wear them down is unacceptable and will result in removal from the event.
+**Ask every time** – if you have not clearly heard "yes," you do not have consent. **No means no** and "stop," "not now," any safe word, or any expression of hesitation must be honored immediately. Pressuring someone, following them, or attempting to wear them down is unacceptable and will result in removal from the event.
+
+**Intoxication does not equal consent.** A person who is intoxicated, impaired, or incapacitated cannot give valid consent. Do not engage in intimate or physical interactions with anyone whose ability to consent is in question. If you are intoxicated to the point of being unable to maintain safe behavior, you may be asked to leave.
+
+**Staff and monitors have final authority.** Dungeon monitors, event staff, and organizers may intervene at any time. Their decisions regarding consent, safety, and conduct are final and must be respected without argument.
 
 ### Venue Care & Respect
 
@@ -63,7 +119,7 @@ Consent must be explicit, informed, and freely given every single time. It canno
 
 **Food Safety & Wildlife Precautions**:
 
-- Some venues (like TRC) have specific food handling and safety instructions that must always be followed
+- Some venues have specific food handling and safety instructions that must always be followed
 - Properly store and dispose of all food and scented items according to venue requirements
 - Follow all wildlife safety protocols, including bear safety measures where applicable
 
@@ -217,4 +273,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ---
 
-_Last updated: December 7, 2025_
+_Last updated: June 1, 2026_
