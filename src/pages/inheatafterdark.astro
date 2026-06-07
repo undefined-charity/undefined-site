@@ -1,0 +1,78 @@
+---
+import BaseLayout from "@components/base/BaseLayout.astro";
+import PageHeader from "@components/common/PageHeader.astro";
+---
+
+<BaseLayout
+  title="In Heat After Dark"
+  description="In Heat After Dark — the hottest after party brought to you by Undefined, Pupifer, and RussellBun."
+>
+  <PageHeader
+    title="In Heat After Dark"
+    description="The hottest after party you've ever been to 😈"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-8">
+          <div class="glass rounded-lg p-8 space-y-10">
+            <div class="flex justify-center">
+              <img
+                src="/images/inheatafterdark.png"
+                alt="In Heat After Dark logo"
+                class="w-48 h-48 rounded-lg"
+                loading="lazy"
+              />
+            </div>
+
+            <div>
+              <p class="text-sm uppercase tracking-wide text-pink-400">Saturday, July 11 2026</p>
+              <h2 class="h3 mb-2">After Dark at the Kink Center</h2>
+              <p>
+                FetchNW is hosting In Heat on the Hiyu — so we're throwing the hottest after party.
+                Undefined, Pupifer, and RussellBun are teaming up to make it the sexiest night possible.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="h4 mb-4">What to Expect</h3>
+              <ul class="list-disc pl-6 space-y-3">
+                <li>Blacklights, slings, cuddle spaces, furry porn — something for everyone.</li>
+                <li>Bus service from the Hiyu → Slightly Furry (9pm–11pm) → Kink Center (11pm–1am).</li>
+                <li>Hop on and go for a ride with us!</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="h4 mb-4">RSVP</h3>
+              <p class="mb-4">
+                RSVP will open soon. When it does, grab your spot below:
+              </p>
+              <a
+                href="https://inheatafterdark.puppy.events/rsvp"
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-pink-600 text-white hover:bg-pink-700 transition"
+              >
+                RSVP for After Dark
+              </a>
+            </div>
+
+            <div class="p-6 rounded-lg bg-pink-600/20 border border-pink-600/40 space-y-3">
+              <h3 class="h5">Support In Heat After Dark</h3>
+              <p>
+                This event is pay-what-you-can. Your donation helps cover the costs of the venue, bus, and supplies.
+                It's not required — but every bit helps us keep throwing events like this!
+              </p>
+              <a
+                href="https://inheatafterdark.puppy.events/donate"
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-pink-600 text-white hover:bg-pink-700 transition"
+              >
+                Donate — Pay What You Can
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
