@@ -28,7 +28,6 @@
 - `/terms` → `src/pages/terms.astro` loads `src/content/terms/-index.md`.
 - `/search` → `src/pages/search.astro` builds search index from content collections: `documents`, `home`, `terms`, `privacy`.
 - Content collections live in `src/content/{home,documents,privacy,terms}/-index.md` and are used by `/search` (and page loaders above).
-- `/barktoberafterdark` → `src/pages/barktoberafterdark.astro` (event details + Partiful RSVP link; not linked from site nav).
 - `/404` → `src/pages/404.astro` uses `@components/not-found/EntryLayout.astro`.
 
 ## Style Notes
