@@ -13,7 +13,7 @@
 - `src/pages/documents.astro` renders sections from files in `public/documents/`.
 - Meeting PDFs should be named `YYYY-MM-DD-Agenda.pdf` and `YYYY-MM-DD-Minutes.pdf` in `public/documents/meetings/` so they group by date.
 - Form 990-EZ files live in `public/documents/files/` using `YYYY 990EZ.pdf` and schedules like `YYYY 990EZ schedule-a.pdf`.
-- Insurance PDFs should start with `InsurancePolicy`.
+- Insurance PDFs live in `public/documents/files/` and are named `InsurancePolicy YYYY-YY.pdf` (policy), `InsurancePolicy YYYY-YY Amendment <detail>.pdf` (endorsements), and `InsurancePolicy YYYY-YY Pan Eros.pdf` (certificate of insurance). They are grouped by policy year, newest first.
 - Marketing assets (logos) are symlinked in `public/documents/` and sourced from `src/assets/`.
 - The letterhead template is `public/documents/files/letterhead.dotx`.
 - Update `public/documents/README.md` when adding or removing marketing assets.

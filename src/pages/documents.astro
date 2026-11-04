@@ -155,38 +155,56 @@ function insuranceDocuments(): DocumentLink[] {
     fileName.toLowerCase().startsWith("insurancepolicy"),
   );
 
+  // Naming scheme: "InsurancePolicy YYYY-YY.pdf" (the policy),
+  // "InsurancePolicy YYYY-YY Amendment <detail>.pdf" (endorsements),
+  // "InsurancePolicy YYYY-YY Pan Eros.pdf" (certificate of insurance for a venue).
+  const typeOrder = ["Policy", "Amendment", "Certificate"];
+
   const docs = files.map((fileName) => {
-    const lower = fileName.toLowerCase();
-    const label =
-      lower === "insurancepolicy.pdf"
-        ? "Insurance Policy"
-        : lower.includes("pan eros")
-          ? "Insurance Policy (Pan Eros)"
-          : lower.includes("ammendment") || lower.includes("amendment")
-            ? "Insurance Policy Amendment"
-            : fileName.replace(/\.pdf$/i, "");
+    const match = fileName.match(
+      /^InsurancePolicy\s+(\d{4})-(\d{2})(?:\s+(.+?))?\.pdf$/i,
+    );
+    const years = match ? `${match[1]}\u2013${match[2]}` : "";
+    const suffix = match?.[3]?.trim() ?? "";
+    const lower = suffix.toLowerCase();
+
+    let type = "Other";
+    let detail = suffix;
+    if (match && !suffix) {
+      type = "Policy";
+      detail = "";
+    } else if (lower.startsWith("amendment")) {
+      type = "Amendment";
+      detail = suffix.replace(/^amendment\s*[-\u2013:]?\s*/i, "");
+    } else if (lower.includes("pan eros")) {
+      type = "Certificate";
+    }
+
+    const label = !match
+      ? fileName.replace(/\.pdf$/i, "")
+      : type === "Other"
+        ? `${years} ${suffix}`
+        : `${years} ${type}${detail ? ` (${detail})` : ""}`;
+
+    const typeIndex = typeOrder.indexOf(type);
 
     return {
       fileName,
       href: publicPdfHref("files", fileName),
       label,
+      years,
+      typeRank: typeIndex === -1 ? typeOrder.length : typeIndex,
     };
   });
 
-  const priorityOrder = [
-    "Insurance Policy",
-    "Insurance Policy Amendment",
-    "Insurance Policy (Pan Eros)",
-  ];
-
-  return docs.sort((a, b) => {
-    const aIndex = priorityOrder.indexOf(a.label);
-    const bIndex = priorityOrder.indexOf(b.label);
-    const aRank = aIndex === -1 ? Number.POSITIVE_INFINITY : aIndex;
-    const bRank = bIndex === -1 ? Number.POSITIVE_INFINITY : bIndex;
-
-    return aRank - bRank || a.label.localeCompare(b.label);
-  });
+  return docs
+    .sort(
+      (a, b) =>
+        b.years.localeCompare(a.years) ||
+        a.typeRank - b.typeRank ||
+        a.label.localeCompare(b.label),
+    )
+    .map(({ fileName, href, label }) => ({ fileName, href, label }));
 }
 
 const meetingData = buildMeetingGroups();
@@ -398,7 +416,7 @@ const lastUpdated = new Intl.DateTimeFormat("en-US", {
                       <div class="mb-2">
                         <h4 class="h5 mb-3">Insurance</h4>
                         <p class="mb-3">
-                          Insurance policy documentation and amendments.
+                          Insurance policies, endorsements, and certificates of insurance by policy year.
                         </p>
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                           {insuranceDocs.map((doc) => (
