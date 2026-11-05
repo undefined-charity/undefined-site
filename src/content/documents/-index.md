@@ -30,6 +30,7 @@ Our original application for tax-exempt status filed with the IRS.
 - **CP575 Notice**: [IRS CP575 Notice](/documents/files/CP575Notice_1739495863893.pdf)
 - **State Certificate**: [Washington State Certificate](/documents/files/0021692540_Certificate.pdf)
 - **State Online Report**: [Washington State Online Report](/documents/files/0021692540_OnlineReport.pdf)
+- **Raffle License**: [Washington State Gambling Commission Raffle License](/documents/files/Raffle%20License.pdf) (effective November 5, 2026 through June 30, 2027)
 
 ## Organization Information
 
