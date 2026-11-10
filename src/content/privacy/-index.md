@@ -21,6 +21,10 @@ All personal data you provide must be true, complete, and accurate. If you suppl
 
 When you accept our Terms & Conditions electronically—whether during ticket purchase, at event check-in, or through any other acceptance flow we provide—we may collect your name, email address, photography preference, and electronic signature. This data is transmitted to our event-operations systems for attendance verification, consent record-keeping, and communication purposes, and is retained per our Data Retention policy below.
 
+## Attendance Eligibility Requests
+
+If you ask the board for an exception under the Attendance Eligibility section of our [Terms & Conditions](/terms), we collect the information you choose to share, which may include details of a conviction, court order, or supervision conditions. This information is seen only by Undefined board members, is used only to decide your request and apply any conditions, and is never shared publicly or with other attendees. We keep the request and the board's decision for as long as they remain relevant to your participation in Undefined events. You may ask us to delete them at any time, which also ends any exception that relied on them.
+
 ## Data We Automatically Collect
 
 When you visit our event ticket shop, we (and service providers acting on our behalf) automatically log device and usage data such as device identifiers, browser and operating system details, language, time zone, and anonymized statistics about browsing actions. We capture this information through cookies in line with the Cookie section of this policy and use it to improve our services, analyze trends, and secure our systems.
@@ -90,4 +94,4 @@ This policy is governed by the laws of the State of Washington and the United St
 
 ---
 
-_Last updated: June 1, 2026_
+_Last updated: November 9, 2026_
