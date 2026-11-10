@@ -132,6 +132,22 @@ Consent must be explicit, informed, and freely given every single time. It canno
 - We're here to make things right - don't hesitate to speak up
 - All reports will be taken seriously and handled appropriately
 
+### Attendance Eligibility
+
+Undefined does not exclude anyone solely because they have a criminal record or appear on a sex offender registry. Registries include people convicted for consensual conduct, under laws that have often been used against our own community.
+
+You may not attend an Undefined event without prior written approval from the board if any of the following apply to you:
+
+- **You are legally prohibited from attending.** This includes any court order, protection order, or condition of probation, parole, or community custody that bars you from the event, the venue, this type of activity, or contact with someone you know will be there.
+- **You are under active court supervision** for an offense involving violence or sexual conduct without consent.
+- **You have been convicted of a serious violent or non-consensual sexual offense** in any jurisdiction. This means a felony involving sexual contact without consent, sexual conduct with a minor, or intentionally causing or threatening serious bodily harm.
+
+**Requesting an exception.** Email [contact@undefined.charity](mailto:contact@undefined.charity?subject=Attendance%20Eligibility%20Request) before buying a ticket. The board reviews requests confidentially and considers the nature of the offense, the time since, and your current circumstances. It may approve, approve with conditions, or decline. An approval carries forward to future events unless your circumstances change, in which case you must tell us. Our [Privacy Policy](/privacy) explains how these requests are handled.
+
+**How this is applied.** Undefined does not run background checks and cannot guarantee that every attendee meets these requirements. By accepting these Terms you confirm that none of the above apply to you, or that you hold a current exception. Attending in violation of this section, or misrepresenting your eligibility, results in immediate removal without refund and a permanent ban.
+
+Nothing in this section limits the board's authority below to exclude anyone who poses a credible risk to participants.
+
 ### Participant Rights & Board Authority
 
 Everyone has the right to enjoy Undefined programs without harassment, undue burden, or safety risks. To uphold that commitment, the Undefined board may suspend or revoke a person's ability to attend events, volunteer, or participate in any official chat groups at any time and for any reason. While the board retains absolute discretion, suspensions typically occur when an individual presents a safety risk to themselves or others, creates substantial disruption, refuses to respect consent, or otherwise places an undue burden on the community or its organizers.
