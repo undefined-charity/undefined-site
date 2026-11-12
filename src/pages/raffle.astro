@@ -117,7 +117,12 @@ const prizes = await Promise.all(
   prizeList.map(async (prize) => {
     const sheet = sheets[`/src/assets/raffle/${prize.file}`]?.default;
     if (!sheet) throw new Error(`Missing raffle prize sheet: ${prize.file}`);
-    const full = await getImage({ src: sheet, width: sheet.width });
+    // Full-resolution version opened when a prize sheet is clicked.
+    const full = await getImage({
+      src: sheet,
+      width: sheet.width,
+      quality: 90,
+    });
     return { ...prize, sheet, fullHref: full.src };
   }),
 );
@@ -258,7 +263,7 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
           >
             <h2 class="h3 mb-2">The Prizes</h2>
             <p class="mb-6 text-sm text-gray-600 dark:text-gray-400">
-              Tap any prize to see it full size.
+              Tap any prize to see it at full resolution.
             </p>
             <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
               {
