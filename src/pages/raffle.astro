@@ -173,6 +173,10 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
               >, which provides crisis support and suicide prevention services
               for LGBTQ+ young people.
             </p>
+            <p class="mb-6">
+              Winners are drawn live at Brain Freeze, Slightly Furry's annual
+              event and part of FetchNW's Frostbite Weekend.
+            </p>
 
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
               <div class="glass-t rounded-lg p-4 text-center">
@@ -216,10 +220,10 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
                     spread them around.
                   </li>
                   <li>
-                    <strong>Watch the draw.</strong> One winner is drawn from
-                    each basket at Brain Freeze on Friday, December 11, 2026 at
-                    10:00 PM. You do not need to be present to win, but we would
-                    love to have you there.
+                    <strong>Watch the draw.</strong> One winner is drawn live
+                    from each basket at Brain Freeze, held at Slightly Furry, on
+                    Friday, December 11, 2026 at 10:00 PM. You do not need to be
+                    present to win, but we would love to have you there.
                   </li>
                   <li>
                     <strong>Collect your prize.</strong> If you are not at the
@@ -236,17 +240,14 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
               <div class="md:col-6">
                 <div class="glass-t rounded-lg p-6 h-full">
                   <h3 class="h4 mb-4">🎟️ Where to Buy Tickets</h3>
-                  <p class="mb-4">
-                    Tickets are sold in person, between now and the draw, at:
-                  </p>
-                  <ul class="list-disc pl-6 mb-4 space-y-2">
+                  <p class="mb-4">Tickets are sold in person at:</p>
+                  <ul class="list-disc pl-6 mb-4 space-y-3">
                     <li>
                       <a
-                        href="https://baddog.events"
+                        href="https://baddogparty.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-blue-600 dark:text-blue-400 hover:underline"
-                        >Bad Dog</a
+                        class={linkClass}>Bad Dog</a
                       >
                     </li>
                     <li>
@@ -254,9 +255,13 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
                         href="https://slightlyfurry.com/pages/taproom"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class={linkClass}
-                        >Slightly Furry</a
-                      >
+                        class={linkClass}>Slightly Furry</a
+                      >, on these dates:
+                      <ul class="list-[circle] pl-6 mt-2 space-y-1">
+                        <li>Thursday, November 19</li>
+                        <li>Saturday, November 21</li>
+                        <li>Friday, December 11, the night of the draw</li>
+                      </ul>
                     </li>
                   </ul>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
