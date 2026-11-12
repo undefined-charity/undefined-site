@@ -122,6 +122,19 @@ const prizes = await Promise.all(
   }),
 );
 
+// Donor websites. Donors without a known site are listed without a link.
+const donorLinks: Record<string, string> = {
+  "Tali Soundwave": "https://talisoundwave.com/",
+  "Smell My Leather": "https://smellmyleather.com/",
+  Rometwin: "https://rometwin.com/",
+  "Phoenix Comics and Games": "https://phoenixseattle.com/",
+  "Crow's Nest Comics": "https://crowsnest.quest/",
+  "Pupifer's Kink Wonderland": "https://www.pupifer.com/",
+  "Doghouse Leathers": "https://www.doghouseleathers.com/",
+};
+
+const linkClass = "text-blue-600 dark:text-blue-400 hover:underline";
+
 const donors = [...new Set(prizeList.map((prize) => prize.donor))]
   .filter((donor) => donor !== "Undefined")
   .sort((a, b) => a.localeCompare(b));
@@ -217,7 +230,15 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
                         >Bad Dog</a
                       >
                     </li>
-                    <li>Slightly Furry</li>
+                    <li>
+                      <a
+                        href="https://slightlyfurry.com/pages/taproom"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class={linkClass}
+                        >Slightly Furry</a
+                      >
+                    </li>
                   </ul>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
                     Questions? Email
@@ -242,28 +263,42 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
             <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
               {
                 prizes.map((prize) => (
-                  <a
-                    href={prize.fullHref}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="glass-t rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow"
-                  >
-                    <Image
-                      src={prize.sheet}
-                      alt={`Raffle item #${prize.number}: ${prize.title}. Donated by ${prize.donor}.`}
-                      widths={[320, 480, 720]}
-                      sizes="(min-width: 1280px) 22vw, (min-width: 768px) 30vw, 46vw"
-                      class="w-full h-auto"
-                      loading="lazy"
-                    />
+                  <div class="glass-t rounded-lg overflow-hidden flex flex-col">
+                    <a
+                      href={prize.fullHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="block hover:opacity-90 transition-opacity"
+                    >
+                      <Image
+                        src={prize.sheet}
+                        alt={`Raffle item #${prize.number}: ${prize.title}. Donated by ${prize.donor}.`}
+                        widths={[320, 480, 720]}
+                        sizes="(min-width: 1280px) 22vw, (min-width: 768px) 30vw, 46vw"
+                        class="w-full h-auto"
+                        loading="lazy"
+                      />
+                    </a>
                     <div class="p-3 flex-1">
                       <p class="font-semibold mb-1">Item #{prize.number}</p>
                       <p class="text-sm mb-2">{prize.title}</p>
                       <p class="text-xs text-gray-600 dark:text-gray-400">
-                        Donated by {prize.donor}
+                        Donated by{" "}
+                        {donorLinks[prize.donor] ? (
+                          <a
+                            href={donorLinks[prize.donor]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class={linkClass}
+                          >
+                            {prize.donor}
+                          </a>
+                        ) : (
+                          prize.donor
+                        )}
                       </p>
                     </div>
-                  </a>
+                  </div>
                 ))
               }
             </div>
@@ -277,7 +312,26 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
               This raffle exists because of the generosity of the people and
               businesses who donated prizes:
             </p>
-            <p class="mb-6 font-semibold">{donors.join(" • ")}</p>
+            <ul class="mb-6 flex flex-wrap gap-x-6 gap-y-2 font-semibold">
+              {
+                donors.map((donor) => (
+                  <li>
+                    {donorLinks[donor] ? (
+                      <a
+                        href={donorLinks[donor]}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class={linkClass}
+                      >
+                        {donor}
+                      </a>
+                    ) : (
+                      donor
+                    )}
+                  </li>
+                ))
+              }
+            </ul>
 
             <div
               class="pt-6 border-t border-gray-200 dark:border-gray-700 text-center"
