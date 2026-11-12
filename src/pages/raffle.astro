@@ -240,19 +240,29 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
               <div class="md:col-6">
                 <div class="glass-t rounded-lg p-6 h-full">
                   <h3 class="h4 mb-4">🎟️ Where to Buy Tickets</h3>
-                  <p class="mb-4">
-                    Tickets are sold in person at
-                    <a
-                      href="https://slightlyfurry.com/pages/taproom"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class={linkClass}>Slightly Furry</a
-                    > on:
-                  </p>
-                  <ul class="list-disc pl-6 mb-4 space-y-2">
-                    <li>Thursday, November 19</li>
-                    <li>Saturday, November 21</li>
-                    <li>Friday, December 11, the night of the draw</li>
+                  <p class="mb-4">Tickets are sold in person at:</p>
+                  <ul class="list-disc pl-6 mb-4 space-y-3">
+                    <li>
+                      <a
+                        href="https://baddog.events"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class={linkClass}>Bad Dog</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://slightlyfurry.com/pages/taproom"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class={linkClass}>Slightly Furry</a
+                      >, on these dates:
+                      <ul class="list-[circle] pl-6 mt-2 space-y-1">
+                        <li>Thursday, November 19</li>
+                        <li>Saturday, November 21</li>
+                        <li>Friday, December 11, the night of the draw</li>
+                      </ul>
+                    </li>
                   </ul>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
                     Questions? Email
