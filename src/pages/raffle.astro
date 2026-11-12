@@ -71,6 +71,7 @@ const prizeList = [
     number: 10,
     file: "item-10-k9-campout.jpg",
     title: "Campsite and admission for 2 to K9 Campout 2027",
+    over21: true,
     donor: "Undefined",
   },
   {
@@ -90,12 +91,14 @@ const prizeList = [
     number: 13,
     file: "item-13-furwood-campout.jpg",
     title: "Campsite and admission for 2 to Furwood 2027",
+    over21: true,
     donor: "Undefined",
   },
   {
     number: 14,
     file: "item-14-bad-dog-tickets.jpg",
     title: "Tickets for 2 to Bad Dog",
+    over21: true,
     donor: "Undefined",
   },
   {
@@ -277,8 +280,12 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
               Tap any prize to see it at full resolution.
             </p>
             <p class="mb-6 text-sm">
-              <strong>Please note:</strong> some prizes can only be redeemed by
-              a person aged 21 or over.
+              <strong>Please note:</strong> K9 Campout, Furwood and Bad Dog
+              are 21+ events, so the prizes marked
+              <span class="inline-block align-middle rounded bg-red-600 px-2 py-0.5 text-xs font-bold text-white">
+                21+
+              </span>
+              can only be redeemed by a person aged 21 or over.
             </p>
             <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
               {
@@ -292,7 +299,7 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
                     >
                       <Image
                         src={prize.sheet}
-                        alt={`Raffle item #${prize.number}: ${prize.title}. Donated by ${prize.donor}.`}
+                        alt={`Raffle item #${prize.number}: ${prize.title}. Donated by ${prize.donor}.${prize.over21 ? " 21+ only." : ""}`}
                         widths={[320, 480, 720]}
                         sizes="(min-width: 1280px) 22vw, (min-width: 768px) 30vw, 46vw"
                         class="w-full h-auto"
@@ -300,7 +307,14 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
                       />
                     </a>
                     <div class="p-3 flex-1">
-                      <p class="font-semibold mb-1">Item #{prize.number}</p>
+                      <p class="font-semibold mb-1">
+                        Item #{prize.number}
+                        {prize.over21 && (
+                          <span class="ml-2 inline-block align-middle rounded bg-red-600 px-2 py-0.5 text-xs font-bold text-white">
+                            21+
+                          </span>
+                        )}
+                      </p>
                       <p class="text-sm mb-2">{prize.title}</p>
                       <p class="text-xs text-gray-600 dark:text-gray-400">
                         Donated by{" "}
