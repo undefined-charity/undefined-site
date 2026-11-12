@@ -84,3 +84,6 @@ build/
 .output/
 .json/
 package-lock.json
+
+# Local full-resolution originals of raffle prize sheets (web copies are in src/assets/raffle)
+raffle-originals/

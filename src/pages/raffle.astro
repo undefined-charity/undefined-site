@@ -1,0 +1,306 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image, getImage } from "astro:assets";
+import BaseLayout from "@components/base/BaseLayout.astro";
+import PageHeader from "@components/common/PageHeader.astro";
+
+// Prize sheets live in src/assets/raffle/ as item-NN-<slug>.jpg.
+const sheets = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/raffle/*.jpg",
+  { eager: true },
+);
+
+const prizeList = [
+  {
+    number: 1,
+    file: "item-01-duck-deck.jpg",
+    title: "Custom painted skateboard deck: 'Duck Deck'",
+    donor: "Tali Soundwave",
+  },
+  {
+    number: 2,
+    file: "item-02-character-hoodie.jpg",
+    title: "Custom made fursona/character hoodie",
+    donor: "SuperNova Creations",
+  },
+  {
+    number: 3,
+    file: "item-03-wooden-badge.jpg",
+    title: "Custom made wooden badge",
+    donor: "Rotim",
+  },
+  {
+    number: 4,
+    file: "item-04-wooden-badge.jpg",
+    title: "Custom made wooden badge",
+    donor: "Rotim",
+  },
+  {
+    number: 5,
+    file: "item-05-pup-accessories.jpg",
+    title:
+      "Black and silver pup accessories: leash, martingale collar, pocket flogger and clicker",
+    donor: "Smell My Leather",
+  },
+  {
+    number: 6,
+    file: "item-06-room-party-print.jpg",
+    title: 'Framed print: "Room Party"',
+    donor: "Rometwin",
+  },
+  {
+    number: 7,
+    file: "item-07-blacklight-art.jpg",
+    title: "Original black light reactive painting and fabric posters",
+    donor: "Pup Jarrad",
+  },
+  {
+    number: 8,
+    file: "item-08-phoenix-comics-games.jpg",
+    title:
+      "Game and comics collection, plus a $25 gift card to Phoenix Comics and Games",
+    donor: "Phoenix Comics and Games",
+  },
+  {
+    number: 9,
+    file: "item-09-crows-nest-comics.jpg",
+    title: "Comics collection from Crow's Nest Comics",
+    donor: "Crow's Nest Comics",
+  },
+  {
+    number: 10,
+    file: "item-10-k9-campout.jpg",
+    title: "Campsite and admission for 2 to K9 Campout 2027",
+    donor: "Undefined",
+  },
+  {
+    number: 11,
+    file: "item-11-play-pack.jpg",
+    title: "Play pack: paddle, LED leash, locks, tag and soft chew toys",
+    donor: "Pupifer's Kink Wonderland",
+  },
+  {
+    number: 12,
+    file: "item-12-slightly-furry-play-pack.jpg",
+    title:
+      "Black and red 'Slightly Furry' style play pack: paddle, bone gag, ring, tags, lock and collar",
+    donor: "Pupifer's Kink Wonderland",
+  },
+  {
+    number: 13,
+    file: "item-13-furwood-campout.jpg",
+    title: "Campsite and admission for 2 to Furwood 2027",
+    donor: "Undefined",
+  },
+  {
+    number: 14,
+    file: "item-14-bad-dog-tickets.jpg",
+    title: "Tickets for 2 to Bad Dog",
+    donor: "Undefined",
+  },
+  {
+    number: 15,
+    file: "item-15-nfc-badges-collar.jpg",
+    title: "Custom furry badges and collar with NFC enabled badges and tags",
+    donor: "Pupifer's Kink Wonderland",
+  },
+  {
+    number: 16,
+    file: "item-16-doghouse-leathers-pack.jpg",
+    title:
+      "Silicone and water lubes, Edge body zipper clothes pins, tuggable clamps and a Prowler size small jock with velcro labels",
+    donor: "Doghouse Leathers",
+  },
+];
+
+const prizes = await Promise.all(
+  prizeList.map(async (prize) => {
+    const sheet = sheets[`/src/assets/raffle/${prize.file}`]?.default;
+    if (!sheet) throw new Error(`Missing raffle prize sheet: ${prize.file}`);
+    const full = await getImage({ src: sheet, width: sheet.width });
+    return { ...prize, sheet, fullHref: full.src };
+  }),
+);
+
+const donors = [...new Set(prizeList.map((prize) => prize.donor))]
+  .filter((donor) => donor !== "Undefined")
+  .sort((a, b) => a.localeCompare(b));
+---
+
+<BaseLayout
+  title="Raffle for The Trevor Project"
+  description="Undefined's raffle for The Trevor Project: $10 tickets with 10 stubs each, 16 prizes, winners drawn at Brain Freeze on December 11, 2026."
+>
+  <PageHeader title="Raffle" />
+  <section class="section">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <div
+            class="glass rounded-lg p-8 mb-8 intersect:animate-fade opacity-0"
+          >
+            <h2 class="h3 mb-4">A Raffle for The Trevor Project</h2>
+            <p class="mb-6 text-lg">
+              Sixteen prizes donated by local makers, artists and shops, and
+              every dollar raised goes to
+              <a
+                href="https://www.thetrevorproject.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-600 dark:text-blue-400 hover:underline"
+                >The Trevor Project</a
+              >, which provides crisis support and suicide prevention services
+              for LGBTQ+ young people.
+            </p>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="glass-t rounded-lg p-4 text-center">
+                <div class="mb-2 text-3xl">🎟️</div>
+                <p class="h4 mb-1">$10</p>
+                <p class="text-sm">per ticket</p>
+              </div>
+              <div class="glass-t rounded-lg p-4 text-center">
+                <div class="mb-2 text-3xl">✂️</div>
+                <p class="h4 mb-1">10 stubs</p>
+                <p class="text-sm">on every ticket</p>
+              </div>
+              <div class="glass-t rounded-lg p-4 text-center">
+                <div class="mb-2 text-3xl">🧊</div>
+                <p class="h4 mb-1">Dec 11</p>
+                <p class="text-sm">drawn at 10 PM at Brain Freeze</p>
+              </div>
+              <div class="glass-t rounded-lg p-4 text-center">
+                <div class="mb-2 text-3xl">🧡</div>
+                <p class="h4 mb-1">100%</p>
+                <p class="text-sm">of proceeds to The Trevor Project</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="glass rounded-lg p-8 mb-8 intersect:animate-fadeUp opacity-0"
+          >
+            <h2 class="h3 mb-6">How It Works</h2>
+            <div class="row">
+              <div class="md:col-6 mb-6 md:mb-0">
+                <ol class="list-decimal pl-6 space-y-3">
+                  <li>
+                    <strong>Buy tickets.</strong> Each ticket is $10. Buy as many
+                    as you like.
+                  </li>
+                  <li>
+                    <strong>Split your stubs.</strong> Every ticket has 10 stubs.
+                    Each prize has its own basket, so drop your stubs into the
+                    baskets for the prizes you want. Put all 10 on one prize or
+                    spread them around.
+                  </li>
+                  <li>
+                    <strong>Watch the draw.</strong> One winner is drawn from
+                    each basket at Brain Freeze on Friday, December 11, 2026 at
+                    10:00 PM.
+                  </li>
+                </ol>
+              </div>
+              <div class="md:col-6">
+                <div class="glass-t rounded-lg p-6 h-full">
+                  <h3 class="h4 mb-4">🎟️ Where to Buy Tickets</h3>
+                  <p class="mb-4">
+                    Tickets are sold in person, between now and the draw, at:
+                  </p>
+                  <ul class="list-disc pl-6 mb-4 space-y-2">
+                    <li>
+                      <a
+                        href="https://baddog.events"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-blue-600 dark:text-blue-400 hover:underline"
+                        >Bad Dog</a
+                      >
+                    </li>
+                    <li>Slightly Furry</li>
+                  </ul>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Questions? Email
+                    <a
+                      href="mailto:contact@undefined.charity?subject=Raffle"
+                      class="text-blue-600 dark:text-blue-400 hover:underline"
+                      >contact@undefined.charity</a
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="glass rounded-lg p-8 mb-8 intersect:animate-fadeUp opacity-0"
+          >
+            <h2 class="h3 mb-2">The Prizes</h2>
+            <p class="mb-6 text-sm text-gray-600 dark:text-gray-400">
+              Tap any prize to see it full size.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+              {
+                prizes.map((prize) => (
+                  <a
+                    href={prize.fullHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="glass-t rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow"
+                  >
+                    <Image
+                      src={prize.sheet}
+                      alt={`Raffle item #${prize.number}: ${prize.title}. Donated by ${prize.donor}.`}
+                      widths={[320, 480, 720]}
+                      sizes="(min-width: 1280px) 22vw, (min-width: 768px) 30vw, 46vw"
+                      class="w-full h-auto"
+                      loading="lazy"
+                    />
+                    <div class="p-3 flex-1">
+                      <p class="font-semibold mb-1">Item #{prize.number}</p>
+                      <p class="text-sm mb-2">{prize.title}</p>
+                      <p class="text-xs text-gray-600 dark:text-gray-400">
+                        Donated by {prize.donor}
+                      </p>
+                    </div>
+                  </a>
+                ))
+              }
+            </div>
+          </div>
+
+          <div
+            class="glass rounded-lg p-8 mb-8 intersect:animate-fadeUp opacity-0"
+          >
+            <h2 class="h3 mb-4">Thank You to Our Donors</h2>
+            <p class="mb-4">
+              This raffle exists because of the generosity of the people and
+              businesses who donated prizes:
+            </p>
+            <p class="mb-6 font-semibold">{donors.join(" • ")}</p>
+
+            <div
+              class="pt-6 border-t border-gray-200 dark:border-gray-700 text-center"
+            >
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                This raffle is conducted by Undefined under a Washington State
+                Gambling Commission raffle license (entity ID 00-26168).
+                <a
+                  href="/documents/files/Raffle%20License.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-600 dark:text-blue-400 hover:underline"
+                  >View the license</a
+                >.
+              </p>
+              <p class="text-xs text-gray-500">
+                Undefined is a registered 501(c)(3) nonprofit organization •
+                EIN: 33-3432965
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

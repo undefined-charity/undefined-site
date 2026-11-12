@@ -24,6 +24,7 @@
 - `/events` → `src/pages/events.astro` (static event descriptions + external links to K9 Campout, Furwood Campout, Discord/Facebook for Seattle Naked Men, and email CTAs).
 - `/donate` → `src/pages/donate.astro` (Venmo link, Benevity link for Microsoft, volunteer + partnership mailto CTAs).
 - `/contact` → `src/pages/contact.astro` (email/phone, mailing + service addresses, links to /documents, /terms, /privacy).
+- `/raffle` → `src/pages/raffle.astro` (Trevor Project raffle: ticket details, draw date, and the prize list defined in the page frontmatter; prize sheets live in `src/assets/raffle/` as `item-NN-<slug>.jpg`).
 - `/privacy` → `src/pages/privacy.astro` loads `src/content/privacy/-index.md`.
 - `/terms` → `src/pages/terms.astro` loads `src/content/terms/-index.md`.
 - `/search` → `src/pages/search.astro` builds search index from content collections: `documents`, `home`, `terms`, `privacy`.
