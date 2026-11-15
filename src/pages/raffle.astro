@@ -114,6 +114,25 @@ const prizeList = [
       "Silicone and water lubes, Edge body zipper clothes pins, tuggable clamps and a Prowler size small jock with velcro labels",
     donor: "Doghouse Leathers",
   },
+  {
+    number: 17,
+    file: "item-17-impact-newcores-tickets.jpg",
+    title: "Two tickets to Impact's New Years celebration: NEWCORES '27",
+    over21: true,
+    donor: "Impact! Foundation",
+  },
+  {
+    number: 18,
+    file: "item-18-bar-cotto-gift-card.jpg",
+    title: "$100 gift card to Bar Cotto",
+    donor: "Bar Cotto",
+  },
+  {
+    number: 19,
+    file: "item-19-cotto-belltown-gift-card.jpg",
+    title: "$100 gift card to Cotto Belltown",
+    donor: "Cotto Belltown",
+  },
 ];
 
 const prizes = await Promise.all(
@@ -139,6 +158,7 @@ const donorLinks: Record<string, string> = {
   "Crow's Nest Comics": "https://crowsnest.quest/",
   "Pupifer's Kink Wonderland": "https://www.pupifer.com/",
   "Doghouse Leathers": "https://www.doghouseleathers.com/",
+  "Cotto Belltown": "https://cottobelltown.com/",
 };
 
 const linkClass = "text-blue-600 dark:text-blue-400 hover:underline";
@@ -150,7 +170,7 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
 
 <BaseLayout
   title="Raffle for The Trevor Project"
-  description="Undefined's raffle for The Trevor Project: $10 tickets with 10 stubs each, 16 prizes, winners drawn at Brain Freeze on December 11, 2026."
+  description="Undefined's raffle for The Trevor Project: $10 tickets with 10 stubs each, 19 prizes, winners drawn at Brain Freeze on December 11, 2026."
 >
   <PageHeader title="Raffle" />
   <section class="section">
@@ -162,7 +182,7 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
           >
             <h2 class="h3 mb-4">A Raffle for The Trevor Project</h2>
             <p class="mb-6 text-lg">
-              Sixteen prizes donated by local makers, artists and shops, and
+              Nineteen prizes donated by local makers, artists and shops, and
               every dollar raised goes to
               <a
                 href="https://www.thetrevorproject.org/"
@@ -285,8 +305,8 @@ const donors = [...new Set(prizeList.map((prize) => prize.donor))]
               Tap any prize to see it at full resolution.
             </p>
             <p class="mb-6 text-sm">
-              <strong>Please note:</strong> K9 Campout, Furwood and Bad Dog
-              are 21+ events, so the prizes marked
+              <strong>Please note:</strong> K9 Campout, Furwood, Bad Dog and
+              Impact's NEWCORES '27 are 21+ events, so the prizes marked
               <span class="inline-block align-middle rounded bg-red-600 px-2 py-0.5 text-xs font-bold text-white">
                 21+
               </span>
